@@ -1,0 +1,22 @@
+= Quarkus iText
+
+include::./includes/attributes.adoc[]
+
+A Quarkus extension that lets you utilize https://itextpdf.com/[iText] Library to create and manipulate PDFs on the fly.
+
+NOTE: This is a fork of iText 2.1.7 version, the last version under MPL/LGPL.
+
+== Installation
+
+If you want to use this extension, you need to add the `io.quarkiverse.itext:quarkus-itext` extension first to your build file.
+
+For instance, with Maven, add the following dependency to your POM file:
+
+[source,xml,subs=attributes+]
+----
+<dependency>
+    <groupId>io.quarkiverse.itext</groupId>
+    <artifactId>quarkus-itext</artifactId>
+    <version>{project-version}</version>
+</dependency>
+----
