@@ -12,6 +12,10 @@ A Quarkus extension that lets you utilize [iText](https://itextpdf.com/) Library
 > :bulb:
 This is a fork of iText 2.1.7 version, the last version under MPL/LGPL
 
+## Getting started
+
+Read the full [iText documentation](https://quarkiverse.github.io/quarkiverse-docs/quarkus-itext/dev/).
+
 ### Prerequisite
 
 * Create or use an existing Quarkus application
