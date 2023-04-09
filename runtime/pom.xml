@@ -18,19 +18,9 @@
 			<artifactId>quarkus-awt</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcprov-jdk15on</artifactId>
-			<version>${bouncycastle.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcpkix-jdk15on</artifactId>
-			<version>${bouncycastle.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcmail-jdk15on</artifactId>
-			<version>${bouncycastle.version}</version>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>quarkus-itext-library</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

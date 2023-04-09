@@ -13,6 +13,7 @@
 	<name>Quarkus Itext - Parent</name>
 	<description>Create and manipulate PDFs on the fly</description>
 	<modules>
+		<module>itext</module>
 		<module>deployment</module>
 		<module>runtime</module>
 		<module>docs</module>
