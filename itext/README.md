@@ -4,6 +4,8 @@ Java Library to create and manipulate PDF on the fly
 
 This is a fork of iText 2.1.7 version, the last version under MPL/LGPL
 
+Original Code: https://github.com/albfernandez/itext2
+
 ## License
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
