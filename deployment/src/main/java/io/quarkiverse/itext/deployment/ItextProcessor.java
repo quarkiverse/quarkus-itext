@@ -64,7 +64,6 @@ class ItextProcessor {
     void registerForReflection(ItextRecorder recorder,
             BuildProducer<ReflectiveClassBuildItem> reflectiveClass,
             CombinedIndexBuildItem combinedIndex) {
-        // RTF Parser
         final List<String> classNames = new ArrayList<>();
         classNames.addAll(collectSubclasses(combinedIndex, Image.class.getName()));
         classNames.add(PageSize.class.getName());
