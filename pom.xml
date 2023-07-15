@@ -8,7 +8,7 @@
   </parent>
   <groupId>io.quarkiverse.itext</groupId>
   <artifactId>quarkus-itext-parent</artifactId>
-  <version>999-SNAPSHOT</version>
+  <version>3.0.4</version>
   <packaging>pom</packaging>
   <name>Quarkus Itext - Parent</name>
   <description>Create and manipulate PDFs on the fly</description>
@@ -22,6 +22,7 @@
     <connection>scm:git:git@github.com:quarkiverse/quarkus-itext.git</connection>
     <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-itext.git</developerConnection>
     <url>https://github.com/quarkiverse/quarkus-itext</url>
+    <tag>3.0.4</tag>
   </scm>
   <properties>
     <compiler-plugin.version>3.11.0</compiler-plugin.version>
