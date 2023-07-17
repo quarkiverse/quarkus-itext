@@ -26,7 +26,7 @@ This is a fork of iText 2.1.7 version, the last version under MPL/LGPL
 
 ## Getting started
 
-Read the full [iText documentation](https://quarkiverse.github.io/quarkiverse-docs/quarkus-itext/dev/).
+Read the full [iText documentation](https://docs.quarkiverse.io/quarkus-itext/dev/index.html).
 
 ### Prerequisite
 
