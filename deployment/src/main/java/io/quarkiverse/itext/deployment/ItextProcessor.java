@@ -11,6 +11,7 @@ import com.lowagie.text.Image;
 import com.lowagie.text.PageSize;
 import com.lowagie.text.Utilities;
 import com.lowagie.text.pdf.PdfName;
+import com.lowagie.text.pdf.PdfPTable;
 
 import io.quarkiverse.itext.runtime.ItextFeature;
 import io.quarkiverse.itext.runtime.ItextRecorder;
@@ -69,6 +70,7 @@ class ItextProcessor {
         classNames.add(PageSize.class.getName());
         classNames.add(PdfName.class.getName());
         classNames.add(Utilities.class.getName());
+        classNames.add(PdfPTable.class.getName());
         classNames.add("com.lowagie.text.VersionBean");
 
         // methods and fields
