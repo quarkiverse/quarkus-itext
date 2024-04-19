@@ -19,10 +19,18 @@
 package io.quarkiverse.itext.runtime;
 
 import org.graalvm.nativeimage.hosted.Feature;
+import org.graalvm.nativeimage.hosted.RuntimeClassInitialization;
+
+import com.lowagie.text.pdf.PdfPublicKeySecurityHandler;
 
 public class ItextFeature implements Feature {
 
     private final static String REASON = "iText runtime initialization";
+
+    @Override
+    public void afterRegistration(AfterRegistrationAccess access) {
+        RuntimeClassInitialization.initializeAtRunTime(PdfPublicKeySecurityHandler.class.getName());
+    }
 
     @Override
     public String getDescription() {

@@ -26,6 +26,8 @@ import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfName;
+import com.lowagie.text.pdf.PdfPCell;
+import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfString;
 import com.lowagie.text.pdf.PdfWriter;
 
@@ -62,6 +64,7 @@ public class ItextResource {
             Paragraph paragraph = new Paragraph("Hello World");
             addEmptyLine(paragraph, 3);
             document.add(paragraph);
+            document.add(addTable());
         } catch (DocumentException de) {
             System.err.println(de.getMessage());
             throw new RuntimeException(de);
@@ -77,5 +80,12 @@ public class ItextResource {
         for (int i = 0; i < number; i++) {
             paragraph.addParagraph(new Paragraph(" "));
         }
+    }
+
+    protected PdfPTable addTable() {
+        PdfPTable pdfTable = new PdfPTable(5);
+        PdfPCell cell = new PdfPCell(new Paragraph(" "));
+        pdfTable.addCellAsCell(cell);
+        return pdfTable;
     }
 }
