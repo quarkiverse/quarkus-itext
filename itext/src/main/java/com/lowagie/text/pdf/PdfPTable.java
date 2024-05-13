@@ -446,7 +446,7 @@ public class PdfPTable implements LargeElement {
      *
      * @param cell the cell element
      */
-    public void addCellAsCell(PdfPCell cell) {
+    public PdfPCell addCellAsCell(PdfPCell cell) {
         rowCompleted = false;
         PdfPCell ncell = new PdfPCell(cell);
 
@@ -502,6 +502,7 @@ public class PdfPTable implements LargeElement {
             currentRow[currentRowIdx] = ncell;
             currentRowIdx += colspan;
         }
+        return ncell;
     }
 
     /**
@@ -509,8 +510,8 @@ public class PdfPTable implements LargeElement {
      *
      * @param cell the cell element
      */
-    public void addCell(PdfPCell cell) {
-        addCellAsCell(cell);
+    public PdfPCell addCell(PdfPCell cell) {
+        return addCellAsCell(cell);
     }
 
     /**
