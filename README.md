@@ -1,9 +1,7 @@
 <div align="center">
-    <a href="https://itextpdf.com/" alt="iText">
-        <img src="https://github.com/quarkiverse/quarkus-quinoa/blob/main/docs/modules/ROOT/assets/images/quarkus.svg" width="67" height="70" >
-        <img src="https://github.com/quarkiverse/quarkus-omnifaces/blob/main/docs/modules/ROOT/assets/images/plus-sign.svg" height="70" >
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png" height="70" />
-    </a>
+    <img src="https://github.com/quarkiverse/quarkus-quinoa/blob/main/docs/modules/ROOT/assets/images/quarkus.svg" width="67" height="70" >
+    <img src="https://github.com/quarkiverse/quarkus-omnifaces/blob/main/docs/modules/ROOT/assets/images/plus-sign.svg" height="70" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png" height="70" />
  
 # Quarkus iText
 </div>
@@ -19,21 +17,45 @@
 
 ## Overview
 
-A Quarkus extension that lets you utilize [iText](https://itextpdf.com/) Library to create and manipulate PDFs on the fly.
+A Quarkus extension that lets you utilize [iText](https://itextpdf.com/) or [OpenPDF](https://github.com/LibrePDF/OpenPDF) to create and manipulate PDFs on the fly.
 
 > :bulb:
-This is a fork of iText 2.1.7 version, the last version under MPL/LGPL
+The pure iText version is a fork of iText 2.1.7 version, the last version under Mozilla Public License Version 2.0
 
 ## Getting started
 
-Read the full [iText documentation](https://docs.quarkiverse.io/quarkus-itext/dev/index.html).
+Read the full [iText/OpenPDF documentation](https://docs.quarkiverse.io/quarkus-itext/dev/index.html).
 
 ### Prerequisite
 
 * Create or use an existing Quarkus application
-* Add the iText extension with the [Quarkus CLI](https://quarkus.io/guides/cli-tooling):
+* Add the iText or OpenPDFextension with the [Quarkus CLI](https://quarkus.io/guides/cli-tooling):
 ```bash
 quarkus ext add io.quarkiverse.itext:quarkus-itext
+```
+
+or
+
+```bash
+quarkus ext add io.quarkiverse.openpdf:quarkus-openpdf
+```
+
+Or add to your pom.xml directly:
+
+```xml
+<dependency>
+    <groupId>io.quarkiverse.itext</groupId>
+    <artifactId>quarkus-itext</artifactId>
+    <version>{project-version}</version>
+</dependency>
+```
+
+```xml
+<dependency>
+    <groupId>io.quarkiverse.openpdf</groupId>
+    <artifactId>quarkus-openpdf</artifactId>
+    <version>{project-version}</version>
+</dependency>
 ```
 
 ## Contributors ✨
