@@ -65,10 +65,11 @@ class OpenPDFProcessor {
             CombinedIndexBuildItem combinedIndex) {
         final List<String> classNames = new ArrayList<>(
                 collectSubclasses(combinedIndex, com.lowagie.text.Image.class.getName()));
+        classNames.add(com.lowagie.bouncycastle.BouncyCastleHelper.class.getName());
         classNames.add(com.lowagie.text.PageSize.class.getName());
         classNames.add(com.lowagie.text.Utilities.class.getName());
         classNames.add(com.lowagie.text.pdf.PdfName.class.getName());
-        classNames.add(com.lowagie.text.pdf.interfaces.PdfVersion.class.getName());
+        classNames.add(com.lowagie.text.pdf.internal.PdfVersionImp.class.getName());
 
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields
