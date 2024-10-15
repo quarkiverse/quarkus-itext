@@ -2,13 +2,13 @@
 
 include::./includes/attributes.adoc[]
 
-A Quarkus extension that lets you utilize https://itextpdf.com/[iText] Library to create and manipulate PDFs on the fly.
+A Quarkus extension that lets you utilize https://itextpdf.com/[iText] or https://github.com/LibrePDF/OpenPDF/[OpenPDF] to create and manipulate PDFs on the fly.
 
-NOTE: This is a fork of iText 2.1.7 version, the last version under MPL/LGPL.
+NOTE: The pure iText version is a fork of iText 2.1.7 version, the last version under Mozilla Public License Version 2.0.
 
 == Installation
 
-If you want to use this extension, you need to add the `io.quarkiverse.itext:quarkus-itext` extension first to your build file.
+If you want to use this extension, you need to add the `io.quarkiverse.itext:quarkus-itext` or `io.quarkiverse.openpdf:quarkus-openpdf` extension first to your build file.
 
 For instance, with Maven, add the following dependency to your POM file:
 
@@ -17,6 +17,17 @@ For instance, with Maven, add the following dependency to your POM file:
 <dependency>
     <groupId>io.quarkiverse.itext</groupId>
     <artifactId>quarkus-itext</artifactId>
+    <version>{project-version}</version>
+</dependency>
+----
+
+or
+
+[source,xml,subs=attributes+]
+----
+<dependency>
+    <groupId>io.quarkiverse.openpdf</groupId>
+    <artifactId>quarkus-openpdf</artifactId>
     <version>{project-version}</version>
 </dependency>
 ----
