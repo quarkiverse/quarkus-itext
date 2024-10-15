@@ -3,7 +3,7 @@
     <img src="https://github.com/quarkiverse/quarkus-omnifaces/blob/main/docs/modules/ROOT/assets/images/plus-sign.svg" height="70" >
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png" height="70" />
  
-# Quarkus iText
+# Quarkus iText/OpenPDF
 </div>
 <br>
 
