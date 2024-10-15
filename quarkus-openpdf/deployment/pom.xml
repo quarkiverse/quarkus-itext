@@ -20,7 +20,7 @@
             <artifactId>quarkus-awt-deployment</artifactId>
         </dependency>
         <dependency>
-			<groupId>io.quarkus</groupId>
+            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-vertx-http-dev-ui-spi</artifactId>
         </dependency>
         <dependency>
@@ -38,6 +38,7 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <executions>
                     <execution>
