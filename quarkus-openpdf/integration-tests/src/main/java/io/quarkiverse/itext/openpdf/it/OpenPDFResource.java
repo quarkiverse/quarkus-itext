@@ -16,7 +16,11 @@
 */
 package io.quarkiverse.itext.openpdf.it;
 
+import java.awt.color.ColorSpace;
+import java.awt.color.ICC_Profile;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Objects;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.GET;
@@ -24,12 +28,16 @@ import jakarta.ws.rs.Path;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
+import com.lowagie.text.Font;
 import com.lowagie.text.Paragraph;
+import com.lowagie.text.pdf.BaseFont;
+import com.lowagie.text.pdf.PdfDictionary;
 import com.lowagie.text.pdf.PdfName;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfString;
 import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.text.xml.xmp.XmpWriter;
 
 @Path("/openpdf")
 @ApplicationScoped
@@ -37,6 +45,7 @@ public class OpenPDFResource {
     // add some rest methods here
 
     @GET
+    @Path("/helloWorldPdf")
     public String helloWorldPdf() {
         // step 1: creation of a document-object
         Document document = new Document();
@@ -77,6 +86,75 @@ public class OpenPDFResource {
         }
 
         return "Hello OpenPDF";
+    }
+
+    @GET
+    @Path("/conformanceA1B")
+    public String conformanceA1B() {
+        // step 1: creation of a document-object
+        Document document = new Document();
+        try {
+            // step 2: create writer and set conformance
+            PdfWriter writer = PdfWriter.getInstance(document, new ByteArrayOutputStream());
+            writer.setPDFXConformance(com.lowagie.text.pdf.PdfWriter.PDFA1B);
+
+            // step 3: open the document
+            document.open();
+
+            // create pdf dictionary with required entry
+            PdfDictionary pdfDictionary = new PdfDictionary();
+            pdfDictionary.put(PdfName.CREATIONDATE, writer.getInfo().get(PdfName.CREATIONDATE));
+            pdfDictionary.put(PdfName.MODDATE, writer.getInfo().get(PdfName.MODDATE));
+
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+
+                // embed dictionary in XmpWriter
+                XmpWriter xmpWriter = new XmpWriter(baos, pdfDictionary, PdfWriter.PDFA1B);
+                xmpWriter.close();
+
+                byte[] xmpMetadata = baos.toByteArray();
+
+                // set xmp metadata and output intents
+                writer.setXmpMetadata(xmpMetadata);
+                writer.setOutputIntents("Custom", "", null, "sRGB IEC61966-2.1",
+                        ICC_Profile.getInstance(ColorSpace.CS_sRGB));
+            }
+
+            // step 4:
+            // we make some content
+            BaseFont notoBase = BaseFont.createFont(
+                    Objects.requireNonNull(
+                            this.getClass().getClassLoader().getResource("fonts/noto/NotoSans-Regular.ttf")).getFile(),
+                    BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+            Font noto = new Font(notoBase, 10, Font.NORMAL);
+
+            // a paragraph
+            Paragraph p1 = new Paragraph("This document is compliant with PDF-A/1b requirements", noto);
+
+            // some paragraph
+            Paragraph p2 = new Paragraph("blah, blah, blah", noto);
+
+            // we add the content
+            document.add(p1);
+            document.add(p2);
+            document.add(p2);
+            document.add(p2);
+            document.add(p2);
+            document.add(p2);
+            document.add(p2);
+            document.add(p2);
+        } catch (DocumentException | IOException de) {
+            de.printStackTrace();
+            System.err.println(de.getMessage());
+            throw new RuntimeException(de);
+        } finally {
+            // step 5: we close the document
+            if (document.isOpen()) {
+                document.close();
+            }
+        }
+
+        return "Conformance A1B";
     }
 
     protected void addEmptyLine(Paragraph paragraph, int number) {
