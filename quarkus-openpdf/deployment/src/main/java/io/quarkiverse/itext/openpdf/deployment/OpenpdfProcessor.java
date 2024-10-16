@@ -48,7 +48,7 @@ class OpenPDFProcessor {
     void registerOpenPdfFonts(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
         final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
         builder.includeGlob("**/pdf/fonts/**");
-        builder.includeGlob("**/font-fallback/**");
+        builder.includeGlob("font-fallback/**");
         nativeImageResourcePatterns.produce(builder.build());
     }
 
