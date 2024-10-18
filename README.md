@@ -19,8 +19,8 @@
 
 A Quarkus extension that lets you utilize [iText](https://itextpdf.com/) or [OpenPDF](https://github.com/LibrePDF/OpenPDF) to create and manipulate PDFs on the fly.
 
-> :bulb:
-The pure iText version is a fork of iText 2.1.7 version, the last version under Mozilla Public License Version 2.0
+> [!NOTE]
+> The main purpose of this extension is to make iText/OpenPDF work in a native executable built with GraalVM/Mandrel.
 
 ## Getting started
 
