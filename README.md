@@ -22,6 +22,9 @@ A Quarkus extension that lets you utilize [iText](https://itextpdf.com/) or [Ope
 > [!NOTE]
 > The main purpose of this extension is to make iText/OpenPDF work in a native executable built with GraalVM/Mandrel.
 
+> [!IMPORTANT]
+> You should use OpenPDF first as its modern and supports modern encryped PDF's.  You should only use the legacy iText version if for some reason OpenPDF does not work for you.
+
 ## Getting started
 
 Read the full [iText/OpenPDF documentation](https://docs.quarkiverse.io/quarkus-itext/dev/index.html).
@@ -42,18 +45,20 @@ quarkus ext add io.quarkiverse.openpdf:quarkus-openpdf
 
 Or add to your pom.xml directly:
 
-```xml
-<dependency>
-    <groupId>io.quarkiverse.itext</groupId>
-    <artifactId>quarkus-itext</artifactId>
-    <version>{project-version}</version>
-</dependency>
-```
-
+**Recommended:**
 ```xml
 <dependency>
     <groupId>io.quarkiverse.openpdf</groupId>
     <artifactId>quarkus-openpdf</artifactId>
+    <version>{project-version}</version>
+</dependency>
+```
+
+**Legacy:**
+```xml
+<dependency>
+    <groupId>io.quarkiverse.itext</groupId>
+    <artifactId>quarkus-itext</artifactId>
     <version>{project-version}</version>
 </dependency>
 ```
