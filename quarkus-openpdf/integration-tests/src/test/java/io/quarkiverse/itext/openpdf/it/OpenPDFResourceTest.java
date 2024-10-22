@@ -27,4 +27,14 @@ public class OpenPDFResourceTest {
                 .statusCode(200)
                 .body(is("Conformance A1B"));
     }
+
+    @Test
+    public void testEncryptedAes256Endpoint() {
+        given()
+                .when().get("/openpdf/encrypted-aes256")
+                .then()
+                .statusCode(200)
+                .body(is(
+                        "Demo   Name   Signature   Date  Elizabeth Schultz (Apr 24, 2018) Elizabeth Schultz Apr 24, 2018 Elizabeth Schultz Sue Northrop (Apr 24, 2018) Apr 24, 2018 Sue Northrop"));
+    }
 }

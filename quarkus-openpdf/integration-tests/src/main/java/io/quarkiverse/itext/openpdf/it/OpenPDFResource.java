@@ -20,6 +20,7 @@ import java.awt.color.ColorSpace;
 import java.awt.color.ICC_Profile;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Objects;
 
 import jakarta.enterprise.context.ApplicationScoped;
@@ -35,8 +36,10 @@ import com.lowagie.text.pdf.PdfDictionary;
 import com.lowagie.text.pdf.PdfName;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
+import com.lowagie.text.pdf.PdfReader;
 import com.lowagie.text.pdf.PdfString;
 import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.text.pdf.parser.PdfTextExtractor;
 import com.lowagie.text.xml.xmp.XmpWriter;
 
 @Path("/openpdf")
@@ -155,6 +158,23 @@ public class OpenPDFResource {
         }
 
         return "Conformance A1B";
+    }
+
+    @GET
+    @Path("/encrypted-aes256")
+    public String encrypted() throws IOException {
+        String text = "";
+        try (InputStream resource = Thread.currentThread().getContextClassLoader()
+                .getResourceAsStream("/encrypted/Demo1_encrypted_.pdf")) {
+            PdfReader pdfReader = new PdfReader(resource);
+            if (!pdfReader.isEncrypted()) {
+                pdfReader.close();
+                throw new RuntimeException("PdfReader fails to report test file to be encrypted.");
+            }
+            text = new PdfTextExtractor(pdfReader).getTextFromPage(1);
+            pdfReader.close();
+        }
+        return text;
     }
 
     protected void addEmptyLine(Paragraph paragraph, int number) {
