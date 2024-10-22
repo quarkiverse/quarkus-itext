@@ -33,14 +33,16 @@ Read the full [iText/OpenPDF documentation](https://docs.quarkiverse.io/quarkus-
 
 * Create or use an existing Quarkus application
 * Add the iText or OpenPDFextension with the [Quarkus CLI](https://quarkus.io/guides/cli-tooling):
-```bash
-quarkus ext add io.quarkiverse.itext:quarkus-itext
-```
 
-or
-
+**Recommended:**
 ```bash
 quarkus ext add io.quarkiverse.openpdf:quarkus-openpdf
+```
+or 
+
+**Legacy:**
+```bash
+quarkus ext add io.quarkiverse.itext:quarkus-itext
 ```
 
 Or add to your pom.xml directly:
