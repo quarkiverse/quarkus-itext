@@ -23,7 +23,7 @@ A Quarkus extension that lets you utilize [iText](https://itextpdf.com/) or [Ope
 > The main purpose of this extension is to make iText/OpenPDF work in a native executable built with GraalVM/Mandrel.
 
 > [!IMPORTANT]
-> You should use OpenPDF first as its modern and supports modern encryped PDF's.  You should only use the legacy iText version if for some reason OpenPDF does not work for you.
+> Consider using OpenPDF first, as it is modern and supports encrypted PDFs. Only resort to the legacy iText version if OpenPDF doesn't meet your needs.
 
 ## Getting started
 
