@@ -164,8 +164,7 @@ public class OpenPDFResource {
     @Path("/encrypted-aes256")
     public String encrypted() throws IOException {
         String text = "";
-        try (InputStream resource = Thread.currentThread().getContextClassLoader()
-                .getResourceAsStream("/encrypted/Demo1_encrypted_.pdf")) {
+        try (InputStream resource = getClass().getResourceAsStream("/encrypted/Demo1_encrypted_.pdf")) {
             PdfReader pdfReader = new PdfReader(resource);
             if (!pdfReader.isEncrypted()) {
                 pdfReader.close();
