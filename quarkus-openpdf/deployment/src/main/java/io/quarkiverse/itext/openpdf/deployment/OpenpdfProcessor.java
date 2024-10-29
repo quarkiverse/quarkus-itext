@@ -8,6 +8,7 @@ import org.jboss.jandex.ClassInfo;
 import org.jboss.jandex.DotName;
 
 import io.quarkiverse.itext.openpdf.runtime.OpenPDFFeature;
+import io.quarkus.deployment.IsNormal;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
@@ -18,6 +19,7 @@ import io.quarkus.deployment.builditem.NativeImageFeatureBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBundleBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.NativeImageResourcePatternsBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
+import io.quarkus.deployment.pkg.builditem.UberJarMergedResourceBuildItem;
 import io.quarkus.logging.Log;
 
 class OpenPDFProcessor {
@@ -75,6 +77,20 @@ class OpenPDFProcessor {
         // methods and fields
         reflectiveClass.produce(
                 ReflectiveClassBuildItem.builder(classNames.toArray(new String[0])).methods().fields().build());
+    }
+
+    /**
+     * Produces `UberJarMergedResourceBuildItem`s for each specified service file to be included in the Uber JAR.
+     * <p>
+     * This build step is only executed in "normal" mode and registers each of the listed services in
+     * the `META-INF/services` directory.
+     *
+     * @param producer The build item producer for creating `UberJarMergedResourceBuildItem` instances.
+     */
+    @BuildStep(onlyIf = IsNormal.class)
+    void uberJarServiceLoaders(BuildProducer<UberJarMergedResourceBuildItem> producer) {
+        // bouncy castle duplicate files
+        producer.produce(new UberJarMergedResourceBuildItem("META-INF/versions/9/OSGI-INF/MANIFEST.MF"));
     }
 
     public List<String> collectSubclasses(CombinedIndexBuildItem combinedIndex, String className) {
