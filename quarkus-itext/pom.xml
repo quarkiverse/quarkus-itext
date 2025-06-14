@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.quarkiverse.itext</groupId>
         <artifactId>quarkus-itext-ecosystem</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>3.2.0</version>
     </parent>
     <groupId>io.quarkiverse.itext</groupId>
     <artifactId>quarkus-itext-parent</artifactId>
