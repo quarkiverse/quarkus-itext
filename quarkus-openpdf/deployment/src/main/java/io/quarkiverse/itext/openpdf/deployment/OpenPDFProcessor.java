@@ -75,9 +75,6 @@ class OpenPDFProcessor {
         classNames.add(com.lowagie.text.pdf.PdfName.class.getName());
         classNames.add(com.lowagie.text.pdf.internal.PdfVersionImp.class.getName());
 
-        // renderer
-        classNames.add(org.openpdf.renderer.colorspace.PDFColorSpace.class.getName());
-
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields
         reflectiveClass.produce(
