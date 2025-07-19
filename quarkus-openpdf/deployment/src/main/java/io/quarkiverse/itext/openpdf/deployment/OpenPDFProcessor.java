@@ -39,6 +39,8 @@ class OpenPDFProcessor {
     @BuildStep
     void indexTransitiveDependencies(BuildProducer<IndexDependencyBuildItem> index) {
         index.produce(new IndexDependencyBuildItem("com.github.librepdf", "openpdf"));
+        index.produce(new IndexDependencyBuildItem("com.github.librepdf", "openpdf-renderer"));
+        index.produce(new IndexDependencyBuildItem("com.github.librepdf", "openpdf-html"));
     }
 
     @BuildStep
@@ -51,6 +53,23 @@ class OpenPDFProcessor {
         final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
         builder.includeGlob("**/pdf/fonts/**");
         builder.includeGlob("font-fallback/**");
+        nativeImageResourcePatterns.produce(builder.build());
+    }
+
+    @BuildStep
+    void registerImageRenderer(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
+        final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
+        builder.includeGlob("BaseFonts.properties");
+        builder.includeGlob("ch/randelshofer/media/jpeg/**");
+        builder.includeGlob("*.pfb");
+        builder.includeGlob("*.icc");
+        nativeImageResourcePatterns.produce(builder.build());
+    }
+
+    @BuildStep
+    void registerHtmlRenderer(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
+        final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
+        builder.includeGlob("resources/**");
         nativeImageResourcePatterns.produce(builder.build());
     }
 
