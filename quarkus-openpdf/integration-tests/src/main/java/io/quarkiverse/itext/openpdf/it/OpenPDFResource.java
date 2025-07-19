@@ -24,12 +24,9 @@ import java.awt.color.ICC_Profile;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
 import java.util.Objects;
 
 import javax.imageio.ImageIO;
@@ -196,16 +193,14 @@ public class OpenPDFResource {
     public String imageRenderer() throws IOException {
         int pageIndex = 1; // 1-based index
 
-        // Load PDF file from test resources
-        URL resourceUrl = getClass().getClassLoader().getResource("/image/HelloWorldMeta.pdf");
+        try (InputStream resource = getClass().getResourceAsStream("/image/HelloWorldMeta.pdf")) {
+            if (resource == null) {
+                throw new IllegalStateException("Resource not found");
+            }
 
-        assert resourceUrl != null;
-        File file = new File(resourceUrl.getFile());
+            byte[] bytes = resource.readAllBytes();
+            ByteBuffer bb = ByteBuffer.wrap(bytes);
 
-        try (FileInputStream fis = new FileInputStream(file);
-                FileChannel fc = fis.getChannel()) {
-
-            ByteBuffer bb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size());
             PDFFile pdfFile = new PDFFile(bb);
             PDFPage page = pdfFile.getPage(pageIndex);
 
