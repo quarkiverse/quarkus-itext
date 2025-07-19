@@ -65,6 +65,8 @@ class OpenPDFProcessor {
     @BuildStep
     void registerOpenPdfForReflection(BuildProducer<ReflectiveClassBuildItem> reflectiveClass,
             CombinedIndexBuildItem combinedIndex) {
+
+        // core PDF classes
         final List<String> classNames = new ArrayList<>(
                 collectSubclasses(combinedIndex, com.lowagie.text.Image.class.getName()));
         classNames.add(com.lowagie.bouncycastle.BouncyCastleHelper.class.getName());
