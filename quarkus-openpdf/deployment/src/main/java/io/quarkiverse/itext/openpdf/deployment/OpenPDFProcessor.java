@@ -77,7 +77,6 @@ class OpenPDFProcessor {
 
         // renderer
         classNames.add(org.openpdf.renderer.colorspace.PDFColorSpace.class.getName());
-        classNames.add(org.openpdf.renderer.font.ttf.AdobeGlyphList.class.getName());
 
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields
