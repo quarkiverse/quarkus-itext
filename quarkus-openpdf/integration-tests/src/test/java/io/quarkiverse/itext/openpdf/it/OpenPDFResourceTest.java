@@ -47,4 +47,14 @@ public class OpenPDFResourceTest {
                 .body(is(
                         "Rendered page 1 to page_1.png"));
     }
+
+    @Test
+    public void testHtmlRenderer() {
+        given()
+                .when().get("/openpdf/renderer-html")
+                .then()
+                .statusCode(200)
+                .body(is(
+                        "PDF created: flying-saucer-hello.pdf"));
+    }
 }

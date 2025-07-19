@@ -13,7 +13,10 @@ public class OpenPDFFeature implements Feature {
 
     @Override
     public void afterRegistration(AfterRegistrationAccess access) {
+        // itext core
         RuntimeClassInitialization.initializeAtRunTime(PdfPublicKeySecurityHandler.class.getName());
+
+        // image renderer
         RuntimeClassInitialization.initializeAtRunTime(AdobeGlyphList.class.getName());
         RuntimeClassInitialization.initializeAtRunTime(PDFColorSpace.class.getName());
     }
