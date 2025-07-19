@@ -24,6 +24,7 @@ import java.awt.color.ICC_Profile;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
@@ -35,6 +36,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 
+import org.openpdf.pdf.ITextRenderer;
 import org.openpdf.renderer.PDFFile;
 import org.openpdf.renderer.PDFPage;
 
@@ -224,6 +226,38 @@ public class OpenPDFResource {
 
             return "Rendered page " + pageIndex + " to " + outputImageFile.getName();
         }
+    }
+
+    @GET
+    @Path("/renderer-html")
+    public String htmlRenderer() throws IOException {
+        String html = """
+                <html>
+                  <head>
+                    <style>
+                      body { font-family: sans-serif; }
+                      h1 { color: navy; }
+                    </style>
+                  </head>
+                  <body>
+                    <h1>Hello, World!</h1>
+                    <p>This PDF was generated using openpdf-html.</p>
+                  </body>
+                </html>
+                """;
+
+        File outputDir = new File("target/test-output");
+        outputDir.mkdirs();
+        File outputImageFile = new File(outputDir, "openpdf-html-hello.pdf");
+
+        try (FileOutputStream outputStream = new FileOutputStream(outputImageFile)) {
+            ITextRenderer renderer = new ITextRenderer();
+            renderer.setDocumentFromString(html);
+            renderer.layout();
+            renderer.createPDF(outputStream);
+        }
+
+        return "PDF created: flying-saucer-hello.pdf";
     }
 
     protected void addEmptyLine(Paragraph paragraph, int number) {
