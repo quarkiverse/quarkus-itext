@@ -37,4 +37,14 @@ public class OpenPDFResourceTest {
                 .body(is(
                         "Demo   Name   Signature   Date  Elizabeth Schultz (Apr 24, 2018) Elizabeth Schultz Apr 24, 2018 Elizabeth Schultz Sue Northrop (Apr 24, 2018) Apr 24, 2018 Sue Northrop"));
     }
+
+    @Test
+    public void testImageRenderer() {
+        given()
+                .when().get("/openpdf/renderer-image")
+                .then()
+                .statusCode(200)
+                .body(is(
+                        "Rendered page 1 to page_1.png"));
+    }
 }

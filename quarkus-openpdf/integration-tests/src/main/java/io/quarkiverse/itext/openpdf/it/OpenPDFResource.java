@@ -16,16 +16,30 @@
 */
 package io.quarkiverse.itext.openpdf.it;
 
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.color.ColorSpace;
 import java.awt.color.ICC_Profile;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.Objects;
+
+import javax.imageio.ImageIO;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
+
+import org.openpdf.renderer.PDFFile;
+import org.openpdf.renderer.PDFPage;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
@@ -163,8 +177,9 @@ public class OpenPDFResource {
     @GET
     @Path("/encrypted-aes256")
     public String encrypted() throws IOException {
-        String text = "";
+        String text;
         try (InputStream resource = getClass().getResourceAsStream("/encrypted/Demo1_encrypted_.pdf")) {
+            assert resource != null;
             PdfReader pdfReader = new PdfReader(resource);
             if (!pdfReader.isEncrypted()) {
                 pdfReader.close();
@@ -174,6 +189,46 @@ public class OpenPDFResource {
             pdfReader.close();
         }
         return text;
+    }
+
+    @GET
+    @Path("/renderer-image")
+    public String imageRenderer() throws IOException {
+        int pageIndex = 1; // 1-based index
+
+        // Load PDF file from test resources
+        URL resourceUrl = getClass().getClassLoader().getResource("/image/HelloWorldMeta.pdf");
+
+        assert resourceUrl != null;
+        File file = new File(resourceUrl.getFile());
+
+        try (FileInputStream fis = new FileInputStream(file);
+                FileChannel fc = fis.getChannel()) {
+
+            ByteBuffer bb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size());
+            PDFFile pdfFile = new PDFFile(bb);
+            PDFPage page = pdfFile.getPage(pageIndex);
+
+            Rectangle rect = new Rectangle(0, 0,
+                    (int) page.getBBox().getWidth(),
+                    (int) page.getBBox().getHeight());
+
+            Image img = page.getImage(rect.width, rect.height, rect, null, true, true);
+
+            // Convert to BufferedImage
+            BufferedImage bufferedImage = new BufferedImage(rect.width, rect.height, BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g2 = bufferedImage.createGraphics();
+            g2.drawImage(img, 0, 0, null);
+            g2.dispose();
+
+            // Save output image to target/test-output
+            File outputDir = new File("target/test-output");
+            outputDir.mkdirs();
+            File outputImageFile = new File(outputDir, "page_" + pageIndex + ".png");
+            ImageIO.write(bufferedImage, "png", outputImageFile);
+
+            return "Rendered page " + pageIndex + " to " + outputImageFile.getName();
+        }
     }
 
     protected void addEmptyLine(Paragraph paragraph, int number) {
