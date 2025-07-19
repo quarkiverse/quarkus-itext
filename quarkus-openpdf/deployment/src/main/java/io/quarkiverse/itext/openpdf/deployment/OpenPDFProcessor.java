@@ -65,6 +65,8 @@ class OpenPDFProcessor {
     @BuildStep
     void registerOpenPdfForReflection(BuildProducer<ReflectiveClassBuildItem> reflectiveClass,
             CombinedIndexBuildItem combinedIndex) {
+
+        // core PDF classes
         final List<String> classNames = new ArrayList<>(
                 collectSubclasses(combinedIndex, com.lowagie.text.Image.class.getName()));
         classNames.add(com.lowagie.bouncycastle.BouncyCastleHelper.class.getName());
@@ -72,6 +74,10 @@ class OpenPDFProcessor {
         classNames.add(com.lowagie.text.Utilities.class.getName());
         classNames.add(com.lowagie.text.pdf.PdfName.class.getName());
         classNames.add(com.lowagie.text.pdf.internal.PdfVersionImp.class.getName());
+
+        // renderer
+        classNames.add(org.openpdf.renderer.colorspace.PDFColorSpace.class.getName());
+        classNames.add(org.openpdf.renderer.font.ttf.AdobeGlyphList.class.getName());
 
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields

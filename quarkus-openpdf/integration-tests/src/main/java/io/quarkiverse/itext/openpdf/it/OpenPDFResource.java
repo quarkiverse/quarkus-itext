@@ -227,6 +227,7 @@ public class OpenPDFResource {
             File outputImageFile = new File(outputDir, "page_" + pageIndex + ".png");
             ImageIO.write(bufferedImage, "png", outputImageFile);
 
+
             return "Rendered page " + pageIndex + " to " + outputImageFile.getName();
         }
     }
