@@ -10,7 +10,7 @@
     <artifactId>quarkus-openpdf</artifactId>
     <name>Quarkus OpenPDF - Runtime</name>
     <properties>
-        <openpdf.version>2.2.4</openpdf.version>
+        <openpdf.version>2.4.0</openpdf.version>
     </properties>
     <dependencies>
         <dependency>
