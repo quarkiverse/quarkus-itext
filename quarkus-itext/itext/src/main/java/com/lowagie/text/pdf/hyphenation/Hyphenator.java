@@ -16,12 +16,12 @@
 
 package com.lowagie.text.pdf.hyphenation;
 
+import org.openpdf.text.pdf.BaseFont;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Hashtable;
-
-import org.openpdf.text.pdf.BaseFont;
 
 /**
  * This class is the main entry point to the hyphenation package.

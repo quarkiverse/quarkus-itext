@@ -46,12 +46,12 @@
  */
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.ExceptionConverter;
+
 import java.io.ByteArrayOutputStream;
 import java.security.PrivateKey;
 import java.security.cert.CRL;
 import java.security.cert.Certificate;
-
-import org.openpdf.text.ExceptionConverter;
 
 /**
  * A signature dictionary representation for the standard filters.

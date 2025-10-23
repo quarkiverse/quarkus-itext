@@ -49,10 +49,10 @@
 
 package com.lowagie.text;
 
+import org.openpdf.text.pdf.PdfPCell;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import org.openpdf.text.pdf.PdfPCell;
 
 /**
  * A <CODE>Cell</CODE> is a <CODE>Rectangle</CODE> containing other

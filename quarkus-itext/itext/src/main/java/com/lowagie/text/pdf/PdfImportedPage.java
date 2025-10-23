@@ -49,10 +49,10 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Image;
+
+import java.io.IOException;
 
 /**
  * Represents an imported page.

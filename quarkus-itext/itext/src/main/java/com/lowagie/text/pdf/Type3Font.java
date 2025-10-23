@@ -47,9 +47,9 @@
 
 package com.lowagie.text.pdf;
 
-import java.util.HashMap;
-
 import org.openpdf.text.DocumentException;
+
+import java.util.HashMap;
 
 /**
  * A class to support Type3 fonts.

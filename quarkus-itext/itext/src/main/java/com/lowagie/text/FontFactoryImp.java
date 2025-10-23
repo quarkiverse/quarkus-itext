@@ -49,18 +49,13 @@
 
 package com.lowagie.text;
 
-import java.awt.Color;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
-
 import org.openpdf.text.html.Markup;
 import org.openpdf.text.pdf.BaseFont;
+
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * If you are using True Type fonts, you can declare the paths of the different ttf- and ttc-files

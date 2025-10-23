@@ -52,7 +52,7 @@
 
 package com.lowagie.text.html;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.Properties;
 import java.util.StringTokenizer;
 

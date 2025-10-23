@@ -49,11 +49,10 @@
 
 package com.lowagie.text.xml;
 
-import java.util.Properties;
-
+import org.openpdf.text.ElementTags;
 import org.xml.sax.Attributes;
 
-import org.openpdf.text.ElementTags;
+import java.util.Properties;
 
 /**
  * This interface is implemented by the peer of all the iText objects.

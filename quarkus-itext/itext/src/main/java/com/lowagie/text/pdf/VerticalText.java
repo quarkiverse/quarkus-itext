@@ -47,13 +47,13 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import org.openpdf.text.Chunk;
 import org.openpdf.text.Element;
 import org.openpdf.text.Phrase;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Writes text vertically. Note that the naming is done according

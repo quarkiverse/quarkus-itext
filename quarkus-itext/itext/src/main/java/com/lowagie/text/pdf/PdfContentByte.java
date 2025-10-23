@@ -49,7 +49,14 @@
 
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
+import org.openpdf.text.*;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.exceptions.IllegalPdfSyntaxException;
+import org.openpdf.text.pdf.internal.PdfAnnotationsImp;
+import org.openpdf.text.pdf.internal.PdfXConformanceImp;
+
+import java.awt.*;
 import java.awt.font.GlyphVector;
 import java.awt.geom.AffineTransform;
 import java.awt.print.PrinterJob;
@@ -57,17 +64,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-
-import org.openpdf.text.Annotation;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Image;
-import org.openpdf.text.ImgJBIG2;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.exceptions.IllegalPdfSyntaxException;
-import org.openpdf.text.pdf.internal.PdfAnnotationsImp;
-import org.openpdf.text.pdf.internal.PdfXConformanceImp;
 
 /**
  * <CODE>PdfContentByte</CODE> is an object containing the user positioned

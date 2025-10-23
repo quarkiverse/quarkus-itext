@@ -49,12 +49,11 @@
 
 package com.lowagie.text.xml;
 
-import java.util.HashMap;
-import java.util.Properties;
-
+import org.openpdf.text.DocListener;
 import org.xml.sax.Attributes;
 
-import org.openpdf.text.DocListener;
+import java.util.HashMap;
+import java.util.Properties;
 
 /**
  * The <CODE>Tags</CODE>-class maps several XHTML-tags to iText-objects.

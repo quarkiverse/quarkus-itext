@@ -49,18 +49,13 @@
 
 package com.lowagie.text.xml.xmp;
 
+import org.openpdf.text.pdf.*;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.Iterator;
 import java.util.Map;
-
-import org.openpdf.text.pdf.PdfDate;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfObject;
-import org.openpdf.text.pdf.PdfString;
-import org.openpdf.text.pdf.PdfWriter;
 
 /**
  * With this class you can create an Xmp Stream that can be used for adding

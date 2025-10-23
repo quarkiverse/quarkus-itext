@@ -47,14 +47,14 @@
 
 package com.lowagie.text.html.simpleparser;
 
-import java.util.ArrayList;
-
 import org.openpdf.text.Element;
 import org.openpdf.text.ElementListener;
 import org.openpdf.text.Phrase;
 import org.openpdf.text.TextElementArray;
 import org.openpdf.text.html.Markup;
 import org.openpdf.text.pdf.PdfPCell;
+
+import java.util.ArrayList;
 
 /**
  *

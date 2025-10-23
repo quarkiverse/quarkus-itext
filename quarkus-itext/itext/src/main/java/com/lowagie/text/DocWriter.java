@@ -49,13 +49,13 @@
 
 package com.lowagie.text;
 
+import org.openpdf.text.pdf.OutputStreamCounter;
+
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.Properties;
-
-import org.openpdf.text.pdf.OutputStreamCounter;
 
 /**
  * An abstract <CODE>Writer</CODE> class for documents.

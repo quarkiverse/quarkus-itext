@@ -48,6 +48,8 @@
  */
 package com.lowagie.text;
 
+import org.openpdf.text.pdf.PRTokeniser;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -57,8 +59,6 @@ import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Properties;
 import java.util.Set;
-
-import org.openpdf.text.pdf.PRTokeniser;
 
 /**
  * A collection of convenience methods that were present in many different iText

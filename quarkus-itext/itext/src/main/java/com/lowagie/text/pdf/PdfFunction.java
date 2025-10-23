@@ -46,9 +46,9 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-
 import org.openpdf.text.ExceptionConverter;
+
+import java.io.IOException;
 
 /**
  * Implements PDF functions.

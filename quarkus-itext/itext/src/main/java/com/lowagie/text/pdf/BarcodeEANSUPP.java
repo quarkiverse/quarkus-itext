@@ -46,9 +46,9 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
-
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
 
 /**
  * This class takes 2 barcodes, an EAN/UPC and a supplemental

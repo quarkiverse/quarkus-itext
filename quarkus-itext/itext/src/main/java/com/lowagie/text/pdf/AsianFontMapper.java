@@ -46,7 +46,7 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Font;
+import java.awt.*;
 
 public class AsianFontMapper extends DefaultFontMapper {
 

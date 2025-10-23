@@ -47,19 +47,14 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
-
 import org.openpdf.text.Document;
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.exceptions.BadPasswordException;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.*;
 
 /**
  *

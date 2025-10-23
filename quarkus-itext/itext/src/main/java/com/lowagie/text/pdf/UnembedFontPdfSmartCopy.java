@@ -1,11 +1,11 @@
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Iterator;
-
-import org.openpdf.text.Document;
-import org.openpdf.text.DocumentException;
 
 /**
  * Makes a copy of a PDF, unembedding all embedded fonts. All font headers and descriptors are preserved and only the font file

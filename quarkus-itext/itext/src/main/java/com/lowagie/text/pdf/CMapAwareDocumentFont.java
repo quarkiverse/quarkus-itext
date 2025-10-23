@@ -46,11 +46,11 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-
 import org.openpdf.text.pdf.fonts.cmaps.CMap;
 import org.openpdf.text.pdf.fonts.cmaps.CMapParser;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 
 /**
  * Implementation of DocumentFont used while parsing PDF streams.

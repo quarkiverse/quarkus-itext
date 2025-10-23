@@ -46,15 +46,15 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.security.cert.Certificate;
-import java.util.List;
-
 import org.openpdf.text.DocWriter;
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.pdf.interfaces.PdfEncryptionSettings;
 import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.security.cert.Certificate;
+import java.util.List;
 
 /**
  * Concatenates PDF documents including form fields. The rules for the form field

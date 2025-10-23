@@ -49,14 +49,14 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.Document;
+import org.openpdf.text.ExceptionConverter;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
-
-import org.openpdf.text.Document;
-import org.openpdf.text.ExceptionConverter;
 
 public class PRStream extends PdfStream {
 

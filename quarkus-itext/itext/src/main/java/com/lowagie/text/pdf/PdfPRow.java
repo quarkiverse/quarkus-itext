@@ -49,13 +49,11 @@
 
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
-
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.*;
 import org.openpdf.text.Image;
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
 
 /**
  * A row in a PdfPTable.

@@ -47,13 +47,13 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.pdf.collection.PdfCollectionItem;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-
-import org.openpdf.text.pdf.collection.PdfCollectionItem;
 
 /**
  * Specifies a file or an URL. The file can be extern or embedded.

@@ -47,24 +47,12 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
-import java.util.StringTokenizer;
-
 import org.openpdf.text.xml.simpleparser.IanaEncodings;
 import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
 import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
+
+import java.io.*;
+import java.util.*;
 
 /**
  * Bookmark processing in a simple way. It has some limitations, mainly the only

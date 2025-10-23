@@ -48,14 +48,12 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.image.MemoryImageSource;
-
 import org.openpdf.text.Element;
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
+import java.awt.image.MemoryImageSource;
 
 /**
  * Implements the code interleaved 2 of 5. The text can include

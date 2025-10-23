@@ -49,14 +49,14 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.pdf.crypto.ARCFOUREncryption;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.security.MessageDigest;
 import java.security.cert.Certificate;
-
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.pdf.crypto.ARCFOUREncryption;
 
 /**
  *

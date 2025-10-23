@@ -49,11 +49,11 @@
 
 package com.lowagie.text.pdf;
 
-import java.util.HashMap;
-import java.util.Iterator;
-
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Rectangle;
+
+import java.util.HashMap;
+import java.util.Iterator;
 
 /**
  * Each PDF document can contain maximum 1 AcroForm.

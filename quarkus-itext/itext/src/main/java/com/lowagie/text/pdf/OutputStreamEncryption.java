@@ -48,13 +48,13 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-import java.io.OutputStream;
-
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.pdf.crypto.AESCipher;
 import org.openpdf.text.pdf.crypto.ARCFOUREncryption;
 import org.openpdf.text.pdf.crypto.IVGenerator;
+
+import java.io.IOException;
+import java.io.OutputStream;
 
 public class OutputStreamEncryption extends OutputStream {
 

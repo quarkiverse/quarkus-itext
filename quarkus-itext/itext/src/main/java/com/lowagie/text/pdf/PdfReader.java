@@ -49,31 +49,9 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.security.Key;
-import java.security.MessageDigest;
-import java.security.PrivateKey;
-import java.security.cert.Certificate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Stack;
-import java.util.zip.InflaterInputStream;
-
 import org.bouncycastle.cms.CMSEnvelopedData;
 import org.bouncycastle.cms.RecipientInformation;
 import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
-
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.PageSize;
 import org.openpdf.text.Rectangle;
@@ -82,6 +60,15 @@ import org.openpdf.text.exceptions.InvalidPdfException;
 import org.openpdf.text.exceptions.UnsupportedPdfException;
 import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
 import org.openpdf.text.pdf.internal.PdfViewerPreferencesImp;
+
+import java.io.*;
+import java.net.URL;
+import java.security.Key;
+import java.security.MessageDigest;
+import java.security.PrivateKey;
+import java.security.cert.Certificate;
+import java.util.*;
+import java.util.zip.InflaterInputStream;
 
 /**
  * Reads a PDF document.

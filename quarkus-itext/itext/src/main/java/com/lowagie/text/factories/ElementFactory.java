@@ -51,32 +51,18 @@
  */
 package com.lowagie.text.factories;
 
-import java.awt.Color;
+import org.openpdf.text.*;
+import org.openpdf.text.Image;
+import org.openpdf.text.List;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.html.Markup;
+
+import java.awt.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.StringTokenizer;
-
-import org.openpdf.text.Anchor;
-import org.openpdf.text.Annotation;
-import org.openpdf.text.BadElementException;
-import org.openpdf.text.Cell;
-import org.openpdf.text.ChapterAutoNumber;
-import org.openpdf.text.Chunk;
-import org.openpdf.text.ElementTags;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.FontFactory;
-import org.openpdf.text.Image;
-import org.openpdf.text.List;
-import org.openpdf.text.ListItem;
-import org.openpdf.text.Paragraph;
-import org.openpdf.text.Phrase;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.Section;
-import org.openpdf.text.Table;
-import org.openpdf.text.Utilities;
-import org.openpdf.text.html.Markup;
 
 /**
  * This class is able to create Element objects based on a list of properties.

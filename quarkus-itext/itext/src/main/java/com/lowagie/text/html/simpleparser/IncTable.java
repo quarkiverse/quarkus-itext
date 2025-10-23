@@ -47,12 +47,12 @@
 
 package com.lowagie.text.html.simpleparser;
 
+import org.openpdf.text.pdf.PdfPCell;
+import org.openpdf.text.pdf.PdfPTable;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-
-import org.openpdf.text.pdf.PdfPCell;
-import org.openpdf.text.pdf.PdfPTable;
 
 /**
  *

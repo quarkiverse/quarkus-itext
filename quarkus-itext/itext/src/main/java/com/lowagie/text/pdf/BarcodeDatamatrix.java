@@ -48,16 +48,15 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Canvas;
-import java.awt.Color;
+import org.openpdf.text.BadElementException;
+import org.openpdf.text.Image;
+import org.openpdf.text.pdf.codec.CCITTG4Encoder;
+
+import java.awt.*;
 import java.awt.image.MemoryImageSource;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.Hashtable;
-
-import org.openpdf.text.BadElementException;
-import org.openpdf.text.Image;
-import org.openpdf.text.pdf.codec.CCITTG4Encoder;
 
 /**
  * A DataMatrix 2D barcode generator.

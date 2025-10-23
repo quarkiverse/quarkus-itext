@@ -1,10 +1,6 @@
 package com.lowagie.text.pdf.collection;
 
-import org.openpdf.text.pdf.PdfArray;
-import org.openpdf.text.pdf.PdfBoolean;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfObject;
+import org.openpdf.text.pdf.*;
 
 public class PdfCollectionSort extends PdfDictionary {
 

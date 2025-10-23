@@ -47,10 +47,10 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.Rectangle;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import org.openpdf.text.Rectangle;
 
 /**
  * Implements form fields.

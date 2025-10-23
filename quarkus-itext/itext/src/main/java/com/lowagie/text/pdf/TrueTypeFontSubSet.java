@@ -49,13 +49,13 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.ExceptionConverter;
 
 /**
  * Subsets a True Type font by removing the unneeded glyphs from

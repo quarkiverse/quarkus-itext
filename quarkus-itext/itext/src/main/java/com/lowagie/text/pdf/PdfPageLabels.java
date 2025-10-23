@@ -49,13 +49,13 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.factories.RomanAlphabetFactory;
 import org.openpdf.text.factories.RomanNumberFactory;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * Page labels are used to identify each

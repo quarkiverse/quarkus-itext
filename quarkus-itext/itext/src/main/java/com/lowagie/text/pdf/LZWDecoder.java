@@ -45,10 +45,10 @@
  */
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.ExceptionConverter;
+
 import java.io.IOException;
 import java.io.OutputStream;
-
-import org.openpdf.text.ExceptionConverter;
 
 /**
  * A class for performing LZW decoding.

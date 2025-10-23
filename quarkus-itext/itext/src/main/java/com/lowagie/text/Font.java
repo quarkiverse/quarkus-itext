@@ -49,10 +49,10 @@
 
 package com.lowagie.text;
 
-import java.awt.Color;
-
 import org.openpdf.text.html.Markup;
 import org.openpdf.text.pdf.BaseFont;
+
+import java.awt.*;
 
 /**
  * Contains all the specifications of a font: fontfamily, size, style and color.

@@ -47,15 +47,15 @@
 
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.Rectangle;
+
+import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.Rectangle;
 
 /**
  * Common field variables.

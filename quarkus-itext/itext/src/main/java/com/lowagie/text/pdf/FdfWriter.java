@@ -46,15 +46,11 @@
  */
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.DocWriter;
+
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.StringTokenizer;
-
-import org.openpdf.text.DocWriter;
+import java.util.*;
 
 /**
  * Writes an FDF form.

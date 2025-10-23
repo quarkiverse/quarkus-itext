@@ -49,19 +49,11 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataInput;
-import java.io.DataInputStream;
-import java.io.EOFException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.RandomAccessFile;
+import org.openpdf.text.Document;
+
+import java.io.*;
 import java.net.URL;
 import java.nio.channels.FileChannel;
-
-import org.openpdf.text.Document;
 
 /**
  * An implementation of a RandomAccessFile for input only

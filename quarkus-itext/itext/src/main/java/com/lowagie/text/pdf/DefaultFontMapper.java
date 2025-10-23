@@ -46,11 +46,11 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Font;
+import org.openpdf.text.ExceptionConverter;
+
+import java.awt.*;
 import java.io.File;
 import java.util.HashMap;
-
-import org.openpdf.text.ExceptionConverter;
 
 /**
  * Default class to map awt fonts to BaseFont.

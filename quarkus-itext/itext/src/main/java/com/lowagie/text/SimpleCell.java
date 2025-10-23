@@ -48,13 +48,13 @@
  */
 package com.lowagie.text;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import org.openpdf.text.pdf.PdfContentByte;
 import org.openpdf.text.pdf.PdfPCell;
 import org.openpdf.text.pdf.PdfPCellEvent;
 import org.openpdf.text.pdf.PdfPTable;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Rectangle that can be used for Cells.

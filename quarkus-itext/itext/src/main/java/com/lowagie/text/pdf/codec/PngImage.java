@@ -89,29 +89,17 @@
 
 package com.lowagie.text.pdf.codec;
 
-import java.awt.color.ICC_Profile;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.zip.Inflater;
-import java.util.zip.InflaterInputStream;
-
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Image;
 import org.openpdf.text.ImgRaw;
 import org.openpdf.text.Utilities;
-import org.openpdf.text.pdf.ByteBuffer;
-import org.openpdf.text.pdf.PdfArray;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfLiteral;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfNumber;
-import org.openpdf.text.pdf.PdfObject;
-import org.openpdf.text.pdf.PdfReader;
-import org.openpdf.text.pdf.PdfString;
+import org.openpdf.text.pdf.*;
+
+import java.awt.color.ICC_Profile;
+import java.io.*;
+import java.net.URL;
+import java.util.zip.Inflater;
+import java.util.zip.InflaterInputStream;
 
 /**
  * Reads a PNG image. All types of PNG can be read.

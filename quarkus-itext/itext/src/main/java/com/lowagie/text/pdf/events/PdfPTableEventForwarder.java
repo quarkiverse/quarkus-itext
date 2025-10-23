@@ -49,12 +49,12 @@
 
 package com.lowagie.text.pdf.events;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import org.openpdf.text.pdf.PdfContentByte;
 import org.openpdf.text.pdf.PdfPTable;
 import org.openpdf.text.pdf.PdfPTableEvent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * If you want to add more than one page event to a PdfPTable,

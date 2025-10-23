@@ -49,10 +49,10 @@
 
 package com.lowagie.text.xml.simpleparser;
 
-import java.util.HashMap;
-
 import org.openpdf.text.Chunk;
 import org.openpdf.text.Font;
+
+import java.util.HashMap;
 
 /**
  * This class contains entities that can be used in an entity tag.

@@ -1,13 +1,8 @@
 package com.lowagie.text.pdf.collection;
 
-import java.util.Calendar;
+import org.openpdf.text.pdf.*;
 
-import org.openpdf.text.pdf.PdfDate;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfNumber;
-import org.openpdf.text.pdf.PdfObject;
-import org.openpdf.text.pdf.PdfString;
+import java.util.Calendar;
 
 public class PdfCollectionItem extends PdfDictionary {
 

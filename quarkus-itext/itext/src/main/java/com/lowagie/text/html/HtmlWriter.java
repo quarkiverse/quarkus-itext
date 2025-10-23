@@ -49,43 +49,13 @@
 
 package com.lowagie.text.html;
 
+import org.openpdf.text.*;
+import org.openpdf.text.List;
+import org.openpdf.text.pdf.BaseFont;
+
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Date;
-import java.util.EmptyStackException;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Stack;
-
-import org.openpdf.text.Anchor;
-import org.openpdf.text.Annotation;
-import org.openpdf.text.BadElementException;
-import org.openpdf.text.Cell;
-import org.openpdf.text.Chunk;
-import org.openpdf.text.DocWriter;
-import org.openpdf.text.Document;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Font;
-import org.openpdf.text.Header;
-import org.openpdf.text.HeaderFooter;
-import org.openpdf.text.Image;
-import org.openpdf.text.List;
-import org.openpdf.text.ListItem;
-import org.openpdf.text.MarkedObject;
-import org.openpdf.text.MarkedSection;
-import org.openpdf.text.Meta;
-import org.openpdf.text.Paragraph;
-import org.openpdf.text.Phrase;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.Row;
-import org.openpdf.text.Section;
-import org.openpdf.text.SimpleTable;
-import org.openpdf.text.Table;
-import org.openpdf.text.pdf.BaseFont;
+import java.util.*;
 
 /**
  * A <CODE>DocWriter</CODE> class for HTML.

@@ -50,9 +50,9 @@
 
 package com.lowagie.text.html.simpleparser;
 
-import java.util.HashMap;
-
 import org.openpdf.text.html.Markup;
+
+import java.util.HashMap;
 
 public class StyleSheet {
 

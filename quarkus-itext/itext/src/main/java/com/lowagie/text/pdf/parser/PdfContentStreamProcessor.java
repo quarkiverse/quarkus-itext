@@ -46,31 +46,12 @@
  */
 package com.lowagie.text.pdf.parser;
 
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.pdf.*;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Stack;
-
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.pdf.CMapAwareDocumentFont;
-import org.openpdf.text.pdf.DocumentFont;
-import org.openpdf.text.pdf.PRIndirectReference;
-import org.openpdf.text.pdf.PRStream;
-import org.openpdf.text.pdf.PRTokeniser;
-import org.openpdf.text.pdf.PdfArray;
-import org.openpdf.text.pdf.PdfContentParser;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfLiteral;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfNumber;
-import org.openpdf.text.pdf.PdfObject;
-import org.openpdf.text.pdf.PdfReader;
-import org.openpdf.text.pdf.PdfStream;
-import org.openpdf.text.pdf.PdfString;
+import java.util.*;
 
 /**
  * Processor for a PDF content Stream.

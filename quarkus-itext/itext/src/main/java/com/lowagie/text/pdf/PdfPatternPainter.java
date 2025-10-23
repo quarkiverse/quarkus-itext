@@ -46,11 +46,11 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
-
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Image;
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
 
 /**
  * Implements the pattern.

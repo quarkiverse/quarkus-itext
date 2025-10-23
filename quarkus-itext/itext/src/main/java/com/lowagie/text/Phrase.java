@@ -49,11 +49,11 @@
 
 package com.lowagie.text;
 
+import org.openpdf.text.pdf.HyphenationEvent;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-
-import org.openpdf.text.pdf.HyphenationEvent;
 
 /**
  * A <CODE>Phrase</CODE> is a series of <CODE>Chunk</CODE>s.

@@ -50,25 +50,19 @@
 
 package com.lowagie.text.html.simpleparser;
 
-import java.awt.Color;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.StringTokenizer;
-
-import org.openpdf.text.Chunk;
-import org.openpdf.text.Element;
-import org.openpdf.text.ElementTags;
+import org.openpdf.text.*;
 import org.openpdf.text.Font;
-import org.openpdf.text.FontFactory;
-import org.openpdf.text.FontFactoryImp;
-import org.openpdf.text.ListItem;
-import org.openpdf.text.Paragraph;
 import org.openpdf.text.html.HtmlTags;
 import org.openpdf.text.html.Markup;
 import org.openpdf.text.pdf.BaseFont;
 import org.openpdf.text.pdf.HyphenationAuto;
 import org.openpdf.text.pdf.HyphenationEvent;
+
+import java.awt.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.StringTokenizer;
 
 /**
  *

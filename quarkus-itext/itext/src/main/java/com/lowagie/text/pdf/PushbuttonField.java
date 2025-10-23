@@ -46,11 +46,11 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Image;
 import org.openpdf.text.Rectangle;
+
+import java.io.IOException;
 
 /**
  * Creates a pushbutton field. It supports all the text and icon alignments.

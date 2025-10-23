@@ -49,14 +49,14 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.DocumentException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.StringTokenizer;
-
-import org.openpdf.text.DocumentException;
 
 /**
  * Base class for the several font types supported

@@ -49,20 +49,18 @@
 
 package com.lowagie.text.xml;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.HashMap;
+import org.openpdf.text.DocListener;
+import org.openpdf.text.ExceptionConverter;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
-import org.openpdf.text.DocListener;
-import org.openpdf.text.ExceptionConverter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.HashMap;
 
 /**
  * This class can be used to parse an XML file.

@@ -46,7 +46,7 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
+import java.awt.*;
 import java.io.IOException;
 
 /**

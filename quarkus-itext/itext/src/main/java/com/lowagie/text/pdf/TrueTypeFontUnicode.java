@@ -49,18 +49,12 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Utilities;
+
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.*;
 
 /**
  * Represents a True Type font with Unicode encoding. All the character

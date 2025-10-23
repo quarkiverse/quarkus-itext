@@ -49,11 +49,11 @@
 
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
+import org.openpdf.text.Rectangle;
+
+import java.awt.*;
 import java.io.IOException;
 import java.util.HashMap;
-
-import org.openpdf.text.Rectangle;
 
 /**
  * A <CODE>PdfAnnotation</CODE> is a note that is associated with a page.

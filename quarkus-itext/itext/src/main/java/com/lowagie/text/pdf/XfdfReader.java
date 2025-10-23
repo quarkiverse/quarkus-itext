@@ -48,6 +48,9 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
+import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
+
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -56,9 +59,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
-
-import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
-import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
 
 /**
  * Reads a XFDF.

@@ -46,25 +46,17 @@
  */
 package com.lowagie.text.pdf;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import org.openpdf.text.*;
+import org.openpdf.text.pdf.collection.PdfCollection;
+import org.openpdf.text.pdf.interfaces.PdfEncryptionSettings;
+import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
+
+import java.io.*;
 import java.security.SignatureException;
 import java.security.cert.Certificate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.openpdf.text.DocWriter;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Image;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.pdf.collection.PdfCollection;
-import org.openpdf.text.pdf.interfaces.PdfEncryptionSettings;
-import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
 
 /**
  * Applies extra content to the pages of a PDF document.

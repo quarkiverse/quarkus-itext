@@ -52,10 +52,10 @@
 
 package com.lowagie.text.html;
 
-import java.util.HashMap;
-
 import org.openpdf.text.ElementTags;
 import org.openpdf.text.FontFactory;
+
+import java.util.HashMap;
 
 /**
  * The <CODE>Tags</CODE>-class maps several XHTML-tags to iText-objects.

@@ -49,13 +49,13 @@
 
 package com.lowagie.text.pdf.events;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import org.openpdf.text.Rectangle;
 import org.openpdf.text.pdf.PdfContentByte;
 import org.openpdf.text.pdf.PdfPCell;
 import org.openpdf.text.pdf.PdfPCellEvent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * If you want to add more than one event to a cell,

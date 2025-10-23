@@ -49,7 +49,10 @@
 
 package com.lowagie.text;
 
-import java.awt.Graphics2D;
+import org.openpdf.text.pdf.*;
+import org.openpdf.text.pdf.codec.*;
+
+import java.awt.*;
 import java.awt.color.ICC_Profile;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -57,27 +60,6 @@ import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.net.MalformedURLException;
 import java.net.URL;
-
-import org.openpdf.text.pdf.PRIndirectReference;
-import org.openpdf.text.pdf.PdfArray;
-import org.openpdf.text.pdf.PdfContentByte;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfIndirectReference;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfNumber;
-import org.openpdf.text.pdf.PdfOCG;
-import org.openpdf.text.pdf.PdfObject;
-import org.openpdf.text.pdf.PdfReader;
-import org.openpdf.text.pdf.PdfStream;
-import org.openpdf.text.pdf.PdfTemplate;
-import org.openpdf.text.pdf.PdfWriter;
-import org.openpdf.text.pdf.RandomAccessFileOrArray;
-import org.openpdf.text.pdf.codec.BmpImage;
-import org.openpdf.text.pdf.codec.CCITTG4Encoder;
-import org.openpdf.text.pdf.codec.GifImage;
-import org.openpdf.text.pdf.codec.JBIG2Image;
-import org.openpdf.text.pdf.codec.PngImage;
-import org.openpdf.text.pdf.codec.TiffImage;
 
 /**
  * An <CODE>Image</CODE> is the representation of a graphic element (JPEG, PNG

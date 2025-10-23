@@ -46,12 +46,10 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.image.MemoryImageSource;
-
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
+import java.awt.image.MemoryImageSource;
 
 /**
  * Implements the Postnet and Planet barcodes. The default parameters are:

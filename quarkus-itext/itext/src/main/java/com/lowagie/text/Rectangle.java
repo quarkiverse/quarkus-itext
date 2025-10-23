@@ -49,10 +49,10 @@
 
 package com.lowagie.text;
 
-import java.awt.Color;
-import java.util.ArrayList;
-
 import org.openpdf.text.pdf.GrayColor;
+
+import java.awt.*;
+import java.util.ArrayList;
 
 /**
  * A <CODE>Rectangle</CODE> is the representation of a geometric figure.
