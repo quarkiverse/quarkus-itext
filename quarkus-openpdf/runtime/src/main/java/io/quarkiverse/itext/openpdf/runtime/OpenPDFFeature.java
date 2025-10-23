@@ -6,7 +6,7 @@ import org.openpdf.pdf.ITextOutputDevice;
 import org.openpdf.renderer.colorspace.PDFColorSpace;
 import org.openpdf.renderer.font.ttf.AdobeGlyphList;
 
-import com.lowagie.text.pdf.PdfPublicKeySecurityHandler;
+import org.openpdf.text.pdf.PdfPublicKeySecurityHandler;
 
 public class OpenPDFFeature implements Feature {
 

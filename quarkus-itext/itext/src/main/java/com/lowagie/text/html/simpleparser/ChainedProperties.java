@@ -53,7 +53,7 @@ package com.lowagie.text.html.simpleparser;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.lowagie.text.ElementTags;
+import org.openpdf.text.ElementTags;
 
 public class ChainedProperties {
 

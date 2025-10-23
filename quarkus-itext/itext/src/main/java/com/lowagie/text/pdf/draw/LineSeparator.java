@@ -51,8 +51,8 @@ package com.lowagie.text.pdf.draw;
 
 import java.awt.Color;
 
-import com.lowagie.text.Element;
-import com.lowagie.text.pdf.PdfContentByte;
+import org.openpdf.text.Element;
+import org.openpdf.text.pdf.PdfContentByte;
 
 /**
  * Element that draws a solid line from left to right.

@@ -54,11 +54,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.lowagie.text.pdf.HyphenationEvent;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfAnnotation;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.draw.DrawInterface;
+import org.openpdf.text.pdf.HyphenationEvent;
+import org.openpdf.text.pdf.PdfAction;
+import org.openpdf.text.pdf.PdfAnnotation;
+import org.openpdf.text.pdf.PdfContentByte;
+import org.openpdf.text.pdf.draw.DrawInterface;
 
 /**
  * This is the smallest significant part of text that can be added to a

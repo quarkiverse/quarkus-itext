@@ -55,8 +55,8 @@ import java.io.OutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.Document;
+import org.openpdf.text.ExceptionConverter;
 
 public class PRStream extends PdfStream {
 

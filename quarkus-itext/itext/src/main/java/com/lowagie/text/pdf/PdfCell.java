@@ -52,16 +52,16 @@ package com.lowagie.text.pdf;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.lowagie.text.Anchor;
-import com.lowagie.text.Cell;
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Element;
-import com.lowagie.text.Image;
-import com.lowagie.text.List;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Anchor;
+import org.openpdf.text.Cell;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Element;
+import org.openpdf.text.Image;
+import org.openpdf.text.List;
+import org.openpdf.text.ListItem;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.Rectangle;
 
 /**
  * A <CODE>PdfCell</CODE> is the PDF translation of a <CODE>Cell</CODE>.

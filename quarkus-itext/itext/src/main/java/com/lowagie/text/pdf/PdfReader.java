@@ -74,14 +74,14 @@ import org.bouncycastle.cms.CMSEnvelopedData;
 import org.bouncycastle.cms.RecipientInformation;
 import org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.exceptions.BadPasswordException;
-import com.lowagie.text.exceptions.InvalidPdfException;
-import com.lowagie.text.exceptions.UnsupportedPdfException;
-import com.lowagie.text.pdf.interfaces.PdfViewerPreferences;
-import com.lowagie.text.pdf.internal.PdfViewerPreferencesImp;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.PageSize;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.exceptions.BadPasswordException;
+import org.openpdf.text.exceptions.InvalidPdfException;
+import org.openpdf.text.exceptions.UnsupportedPdfException;
+import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
+import org.openpdf.text.pdf.internal.PdfViewerPreferencesImp;
 
 /**
  * Reads a PDF document.

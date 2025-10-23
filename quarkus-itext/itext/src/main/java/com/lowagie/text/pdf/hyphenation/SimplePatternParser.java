@@ -56,10 +56,10 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.html.HtmlTags;
-import com.lowagie.text.xml.simpleparser.SimpleXMLDocHandler;
-import com.lowagie.text.xml.simpleparser.SimpleXMLParser;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.html.HtmlTags;
+import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
+import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
 
 /**
  * Parses the xml hyphenation pattern.

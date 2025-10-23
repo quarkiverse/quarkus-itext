@@ -49,7 +49,7 @@
 
 package com.lowagie.text.pdf.draw;
 
-import com.lowagie.text.pdf.PdfContentByte;
+import org.openpdf.text.pdf.PdfContentByte;
 
 /**
  * Element that draws a dotted line from left to right.

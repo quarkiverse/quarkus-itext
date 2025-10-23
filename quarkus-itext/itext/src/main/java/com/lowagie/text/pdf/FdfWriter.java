@@ -54,7 +54,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.DocWriter;
+import org.openpdf.text.DocWriter;
 
 /**
  * Writes an FDF form.

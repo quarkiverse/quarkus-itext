@@ -54,15 +54,15 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.ImgRaw;
-import com.lowagie.text.Utilities;
-import com.lowagie.text.pdf.PdfArray;
-import com.lowagie.text.pdf.PdfDictionary;
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfNumber;
-import com.lowagie.text.pdf.PdfString;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.ImgRaw;
+import org.openpdf.text.Utilities;
+import org.openpdf.text.pdf.PdfArray;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfNumber;
+import org.openpdf.text.pdf.PdfString;
 
 /**
  * Reads gif images of all types. All the images in a gif are read in the constructors

@@ -57,14 +57,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.collection.PdfCollection;
-import com.lowagie.text.pdf.interfaces.PdfEncryptionSettings;
-import com.lowagie.text.pdf.interfaces.PdfViewerPreferences;
+import org.openpdf.text.DocWriter;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.pdf.collection.PdfCollection;
+import org.openpdf.text.pdf.interfaces.PdfEncryptionSettings;
+import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
 
 /**
  * Applies extra content to the pages of a PDF document.

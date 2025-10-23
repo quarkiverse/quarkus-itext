@@ -46,7 +46,7 @@
  */
 package com.lowagie.text.pdf.parser;
 
-import com.lowagie.text.pdf.CMapAwareDocumentFont;
+import org.openpdf.text.pdf.CMapAwareDocumentFont;
 
 /**
  * Keeps all the parameters of the graphics state.

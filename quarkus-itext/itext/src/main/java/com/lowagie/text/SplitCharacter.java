@@ -49,7 +49,7 @@
 
 package com.lowagie.text;
 
-import com.lowagie.text.pdf.PdfChunk;
+import org.openpdf.text.pdf.PdfChunk;
 
 /**
  * Interface for customizing the split character.

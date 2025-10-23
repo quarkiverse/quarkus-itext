@@ -57,8 +57,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
-import com.lowagie.text.xml.simpleparser.SimpleXMLDocHandler;
-import com.lowagie.text.xml.simpleparser.SimpleXMLParser;
+import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
+import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
 
 /**
  * Reads a XFDF.

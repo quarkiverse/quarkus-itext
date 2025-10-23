@@ -55,12 +55,12 @@ import java.io.OutputStreamWriter;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.lowagie.text.pdf.PdfDate;
-import com.lowagie.text.pdf.PdfDictionary;
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfObject;
-import com.lowagie.text.pdf.PdfString;
-import com.lowagie.text.pdf.PdfWriter;
+import org.openpdf.text.pdf.PdfDate;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfObject;
+import org.openpdf.text.pdf.PdfString;
+import org.openpdf.text.pdf.PdfWriter;
 
 /**
  * With this class you can create an Xmp Stream that can be used for adding

@@ -21,7 +21,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Hashtable;
 
-import com.lowagie.text.pdf.BaseFont;
+import org.openpdf.text.pdf.BaseFont;
 
 /**
  * This class is the main entry point to the hyphenation package.

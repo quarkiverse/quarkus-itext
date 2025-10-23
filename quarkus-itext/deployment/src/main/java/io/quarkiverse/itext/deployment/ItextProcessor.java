@@ -7,10 +7,10 @@ import java.util.stream.Collectors;
 import org.jboss.jandex.ClassInfo;
 import org.jboss.jandex.DotName;
 
-import com.lowagie.text.Image;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Utilities;
-import com.lowagie.text.pdf.PdfName;
+import org.openpdf.text.Image;
+import org.openpdf.text.PageSize;
+import org.openpdf.text.Utilities;
+import org.openpdf.text.pdf.PdfName;
 
 import io.quarkiverse.itext.runtime.ItextFeature;
 import io.quarkiverse.itext.runtime.ItextRecorder;

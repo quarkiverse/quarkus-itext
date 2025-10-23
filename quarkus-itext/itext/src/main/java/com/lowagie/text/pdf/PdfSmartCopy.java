@@ -56,9 +56,9 @@ import java.security.MessageDigest;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * PdfSmartCopy has the same functionality as PdfCopy,

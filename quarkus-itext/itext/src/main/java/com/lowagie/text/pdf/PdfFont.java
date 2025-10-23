@@ -49,8 +49,8 @@
 
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
 
 /**
  * <CODE>PdfFont</CODE> is the Pdf Font object.

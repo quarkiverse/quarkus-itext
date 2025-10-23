@@ -52,7 +52,7 @@ package com.lowagie.text.html.simpleparser;
 
 import java.util.HashMap;
 
-import com.lowagie.text.html.Markup;
+import org.openpdf.text.html.Markup;
 
 public class StyleSheet {
 

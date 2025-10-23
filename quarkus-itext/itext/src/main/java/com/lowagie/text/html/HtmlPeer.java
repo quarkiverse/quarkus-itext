@@ -53,8 +53,8 @@ import java.util.Properties;
 
 import org.xml.sax.Attributes;
 
-import com.lowagie.text.ElementTags;
-import com.lowagie.text.xml.XmlPeer;
+import org.openpdf.text.ElementTags;
+import org.openpdf.text.xml.XmlPeer;
 
 /**
  * This interface is implemented by the peer of all the iText objects.

@@ -52,7 +52,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import com.lowagie.text.pdf.RandomAccessFileOrArray;
+import org.openpdf.text.pdf.RandomAccessFileOrArray;
 
 /**
  * A class representing an Image File Directory (IFD) from a TIFF 6.0

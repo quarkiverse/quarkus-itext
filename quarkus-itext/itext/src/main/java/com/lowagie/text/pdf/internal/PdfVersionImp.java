@@ -51,13 +51,13 @@ package com.lowagie.text.pdf.internal;
 
 import java.io.IOException;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.pdf.OutputStreamCounter;
-import com.lowagie.text.pdf.PdfDeveloperExtension;
-import com.lowagie.text.pdf.PdfDictionary;
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.pdf.interfaces.PdfVersion;
+import org.openpdf.text.DocWriter;
+import org.openpdf.text.pdf.OutputStreamCounter;
+import org.openpdf.text.pdf.PdfDeveloperExtension;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfWriter;
+import org.openpdf.text.pdf.interfaces.PdfVersion;
 
 /**
  * Stores the PDF version information,

@@ -54,9 +54,9 @@ import java.io.OutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.Document;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.DocWriter;
+import org.openpdf.text.Document;
+import org.openpdf.text.Rectangle;
 
 /**
  * <CODE>PdfContents</CODE> is a <CODE>PdfStream</CODE> containing the contents (text + graphics) of a <CODE>PdfPage</CODE>.

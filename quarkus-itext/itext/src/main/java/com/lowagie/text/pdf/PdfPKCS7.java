@@ -119,7 +119,7 @@ import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
 import org.bouncycastle.tsp.TimeStampToken;
 import org.bouncycastle.tsp.TimeStampTokenInfo;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * This class does all the processing related to signing and verifying a PKCS#7 signature.

@@ -21,7 +21,7 @@ package io.quarkiverse.itext.runtime;
 import org.graalvm.nativeimage.hosted.Feature;
 import org.graalvm.nativeimage.hosted.RuntimeClassInitialization;
 
-import com.lowagie.text.pdf.PdfPublicKeySecurityHandler;
+import org.openpdf.text.pdf.PdfPublicKeySecurityHandler;
 
 public class ItextFeature implements Feature {
 

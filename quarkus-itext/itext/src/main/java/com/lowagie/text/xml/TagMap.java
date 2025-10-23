@@ -61,7 +61,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * The <CODE>Tags</CODE>-class maps several XHTML-tags to iText-objects.

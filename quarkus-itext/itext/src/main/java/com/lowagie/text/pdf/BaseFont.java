@@ -56,7 +56,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.DocumentException;
+import org.openpdf.text.DocumentException;
 
 /**
  * Base class for the several font types supported

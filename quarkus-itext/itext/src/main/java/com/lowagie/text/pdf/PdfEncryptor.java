@@ -52,7 +52,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
 
-import com.lowagie.text.DocumentException;
+import org.openpdf.text.DocumentException;
 
 /**
  * This class takes any PDF and returns exactly the same but

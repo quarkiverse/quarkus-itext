@@ -49,7 +49,7 @@
 
 package com.lowagie.text.xml.xmp;
 
-import com.lowagie.text.Document;
+import org.openpdf.text.Document;
 
 /**
  * An implementation of an XmpSchema.

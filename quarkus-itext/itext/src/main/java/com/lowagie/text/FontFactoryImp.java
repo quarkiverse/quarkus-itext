@@ -59,8 +59,8 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
 
-import com.lowagie.text.html.Markup;
-import com.lowagie.text.pdf.BaseFont;
+import org.openpdf.text.html.Markup;
+import org.openpdf.text.pdf.BaseFont;
 
 /**
  * If you are using True Type fonts, you can declare the paths of the different ttf- and ttc-files

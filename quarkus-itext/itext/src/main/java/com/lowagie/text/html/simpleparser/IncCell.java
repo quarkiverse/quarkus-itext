@@ -49,12 +49,12 @@ package com.lowagie.text.html.simpleparser;
 
 import java.util.ArrayList;
 
-import com.lowagie.text.Element;
-import com.lowagie.text.ElementListener;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.TextElementArray;
-import com.lowagie.text.html.Markup;
-import com.lowagie.text.pdf.PdfPCell;
+import org.openpdf.text.Element;
+import org.openpdf.text.ElementListener;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.TextElementArray;
+import org.openpdf.text.html.Markup;
+import org.openpdf.text.pdf.PdfPCell;
 
 /**
  *

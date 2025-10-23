@@ -55,8 +55,8 @@ import java.io.OutputStream;
 import java.security.MessageDigest;
 import java.security.cert.Certificate;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.pdf.crypto.ARCFOUREncryption;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.pdf.crypto.ARCFOUREncryption;
 
 /**
  *

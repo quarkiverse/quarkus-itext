@@ -52,7 +52,7 @@ package com.lowagie.text;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.lowagie.text.factories.RomanAlphabetFactory;
+import org.openpdf.text.factories.RomanAlphabetFactory;
 
 /**
  * A <CODE>List</CODE> contains several <CODE>ListItem</CODE>s.

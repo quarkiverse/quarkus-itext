@@ -71,7 +71,7 @@ package com.lowagie.text.pdf;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 public class CFFFont {
 

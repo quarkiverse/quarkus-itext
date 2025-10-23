@@ -3,7 +3,7 @@ package io.quarkiverse.itext.openpdf.runtime;
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
-import com.lowagie.text.pdf.BaseFont;
+import org.openpdf.text.pdf.BaseFont;
 import com.oracle.svm.core.annotate.Substitute;
 import com.oracle.svm.core.annotate.TargetClass;
 

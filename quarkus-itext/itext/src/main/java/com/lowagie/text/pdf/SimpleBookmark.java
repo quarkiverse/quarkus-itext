@@ -62,9 +62,9 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.xml.simpleparser.IanaEncodings;
-import com.lowagie.text.xml.simpleparser.SimpleXMLDocHandler;
-import com.lowagie.text.xml.simpleparser.SimpleXMLParser;
+import org.openpdf.text.xml.simpleparser.IanaEncodings;
+import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
+import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
 
 /**
  * Bookmark processing in a simple way. It has some limitations, mainly the only

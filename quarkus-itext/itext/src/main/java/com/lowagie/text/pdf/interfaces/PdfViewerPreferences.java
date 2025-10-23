@@ -49,8 +49,8 @@
 
 package com.lowagie.text.pdf.interfaces;
 
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfObject;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfObject;
 
 /**
  * Viewer preferences are described in section 3.6.1 and 8.1 of the

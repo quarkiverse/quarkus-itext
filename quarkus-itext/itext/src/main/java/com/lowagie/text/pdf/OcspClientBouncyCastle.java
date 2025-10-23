@@ -79,7 +79,7 @@ import org.bouncycastle.operator.DigestCalculatorProvider;
 import org.bouncycastle.operator.OperatorException;
 import org.bouncycastle.operator.jcajce.JcaDigestCalculatorProviderBuilder;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * OcspClient implementation using BouncyCastle.

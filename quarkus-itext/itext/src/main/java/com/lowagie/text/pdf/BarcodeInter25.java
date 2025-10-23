@@ -53,9 +53,9 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.MemoryImageSource;
 
-import com.lowagie.text.Element;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Element;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Rectangle;
 
 /**
  * Implements the code interleaved 2 of 5. The text can include

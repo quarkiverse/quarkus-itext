@@ -49,7 +49,7 @@
 
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.SplitCharacter;
+import org.openpdf.text.SplitCharacter;
 
 /**
  * The default class that is used to determine whether or not a character

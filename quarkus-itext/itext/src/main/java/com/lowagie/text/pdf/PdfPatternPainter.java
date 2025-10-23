@@ -48,9 +48,9 @@ package com.lowagie.text.pdf;
 
 import java.awt.Color;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Image;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
 
 /**
  * Implements the pattern.

@@ -54,16 +54,16 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.SimpleTable;
-import com.lowagie.text.pdf.draw.DrawInterface;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.ListItem;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.SimpleTable;
+import org.openpdf.text.pdf.draw.DrawInterface;
 
 /**
  * Formats text in a columnwise form. The text is bound

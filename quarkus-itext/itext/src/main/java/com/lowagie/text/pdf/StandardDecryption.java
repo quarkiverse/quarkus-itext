@@ -48,8 +48,8 @@
  */
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.pdf.crypto.AESCipher;
-import com.lowagie.text.pdf.crypto.ARCFOUREncryption;
+import org.openpdf.text.pdf.crypto.AESCipher;
+import org.openpdf.text.pdf.crypto.ARCFOUREncryption;
 
 public class StandardDecryption {
     protected ARCFOUREncryption arcfour;

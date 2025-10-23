@@ -1,8 +1,8 @@
 package com.lowagie.text.pdf.collection;
 
-import com.lowagie.text.pdf.PdfDictionary;
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfString;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfString;
 
 public class PdfCollection extends PdfDictionary {
 

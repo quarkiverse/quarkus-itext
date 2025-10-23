@@ -48,7 +48,7 @@
  */
 package com.lowagie.text.pdf.codec;
 
-import com.lowagie.text.pdf.ByteBuffer;
+import org.openpdf.text.pdf.ByteBuffer;
 
 /**
  * Encodes data in the CCITT G4 FAX format.

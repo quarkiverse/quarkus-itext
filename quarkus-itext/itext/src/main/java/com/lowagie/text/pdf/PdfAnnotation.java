@@ -53,7 +53,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.util.HashMap;
 
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Rectangle;
 
 /**
  * A <CODE>PdfAnnotation</CODE> is a note that is associated with a page.

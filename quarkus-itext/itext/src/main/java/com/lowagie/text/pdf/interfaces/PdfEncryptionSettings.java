@@ -51,7 +51,7 @@ package com.lowagie.text.pdf.interfaces;
 
 import java.security.cert.Certificate;
 
-import com.lowagie.text.DocumentException;
+import org.openpdf.text.DocumentException;
 
 /**
  * Encryption settings are described in section 3.5 (more specifically

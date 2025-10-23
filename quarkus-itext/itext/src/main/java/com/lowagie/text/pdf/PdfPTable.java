@@ -51,14 +51,14 @@ package com.lowagie.text.pdf;
 
 import java.util.ArrayList;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.ElementListener;
-import com.lowagie.text.Image;
-import com.lowagie.text.LargeElement;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.events.PdfPTableEventForwarder;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ElementListener;
+import org.openpdf.text.Image;
+import org.openpdf.text.LargeElement;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.pdf.events.PdfPTableEventForwarder;
 
 /**
  * This is a table that can be put at an absolute position but can also

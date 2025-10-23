@@ -51,8 +51,8 @@ package com.lowagie.text.pdf;
 
 import java.io.IOException;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Image;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Image;
 
 /**
  * Represents an imported page.

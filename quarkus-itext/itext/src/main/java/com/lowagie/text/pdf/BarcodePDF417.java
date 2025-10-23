@@ -53,9 +53,9 @@ import java.awt.Color;
 import java.awt.image.MemoryImageSource;
 import java.util.ArrayList;
 
-import com.lowagie.text.BadElementException;
-import com.lowagie.text.Image;
-import com.lowagie.text.pdf.codec.CCITTG4Encoder;
+import org.openpdf.text.BadElementException;
+import org.openpdf.text.Image;
+import org.openpdf.text.pdf.codec.CCITTG4Encoder;
 
 /**
  * Generates the 2D barcode PDF417. Supports dimensioning auto-sizing, fixed

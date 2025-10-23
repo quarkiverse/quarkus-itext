@@ -51,10 +51,10 @@ package com.lowagie.text.pdf;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.pdf.crypto.AESCipher;
-import com.lowagie.text.pdf.crypto.ARCFOUREncryption;
-import com.lowagie.text.pdf.crypto.IVGenerator;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.pdf.crypto.AESCipher;
+import org.openpdf.text.pdf.crypto.ARCFOUREncryption;
+import org.openpdf.text.pdf.crypto.IVGenerator;
 
 public class OutputStreamEncryption extends OutputStream {
 

@@ -49,7 +49,7 @@
 
 package com.lowagie.text.pdf.draw;
 
-import com.lowagie.text.pdf.PdfContentByte;
+import org.openpdf.text.pdf.PdfContentByte;
 
 /**
  * Interface for an Element that allows you to draw something at the current

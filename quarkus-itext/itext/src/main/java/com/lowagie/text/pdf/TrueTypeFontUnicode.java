@@ -59,8 +59,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Utilities;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Utilities;
 
 /**
  * Represents a True Type font with Unicode encoding. All the character

@@ -51,8 +51,8 @@ package com.lowagie.text.xml.simpleparser;
 
 import java.util.HashMap;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Font;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Font;
 
 /**
  * This class contains entities that can be used in an entity tag.

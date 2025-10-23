@@ -54,14 +54,14 @@ import java.util.Properties;
 
 import org.xml.sax.Attributes;
 
-import com.lowagie.text.DocListener;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.ElementTags;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.xml.SAXiTextHandler;
-import com.lowagie.text.xml.XmlPeer;
+import org.openpdf.text.DocListener;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ElementTags;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.pdf.BaseFont;
+import org.openpdf.text.xml.SAXiTextHandler;
+import org.openpdf.text.xml.XmlPeer;
 
 /**
  * The <CODE>Tags</CODE>-class maps several XHTML-tags to iText-objects.

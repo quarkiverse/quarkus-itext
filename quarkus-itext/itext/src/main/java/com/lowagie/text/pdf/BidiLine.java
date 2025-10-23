@@ -50,8 +50,8 @@ package com.lowagie.text.pdf;
 
 import java.util.ArrayList;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Utilities;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Utilities;
 
 /**
  * Does all the line bidirectional processing with PdfChunk assembly.

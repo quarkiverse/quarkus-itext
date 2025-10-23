@@ -54,9 +54,9 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.lowagie.text.pdf.PdfTemplate;
-import com.lowagie.text.pdf.codec.wmf.InputMeta;
-import com.lowagie.text.pdf.codec.wmf.MetaDo;
+import org.openpdf.text.pdf.PdfTemplate;
+import org.openpdf.text.pdf.codec.wmf.InputMeta;
+import org.openpdf.text.pdf.codec.wmf.MetaDo;
 
 /**
  * An <CODE>ImgWMF</CODE> is the representation of a windows metafile

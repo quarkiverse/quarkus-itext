@@ -52,7 +52,7 @@ package com.lowagie.text.pdf;
 import java.io.OutputStream;
 import java.util.HashMap;
 
-import com.lowagie.text.DocumentException;
+import org.openpdf.text.DocumentException;
 
 /**
  * Allows you to add one (or more) existing PDF document(s)

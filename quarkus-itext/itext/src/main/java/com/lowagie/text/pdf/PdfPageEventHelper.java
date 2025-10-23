@@ -49,9 +49,9 @@
 
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Document;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.Rectangle;
 
 /**
  * Helps the use of <CODE>PdfPageEvent</CODE> by implementing all the interface methods.

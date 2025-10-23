@@ -56,19 +56,19 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Element;
-import com.lowagie.text.ElementTags;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.FontFactoryImp;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.html.HtmlTags;
-import com.lowagie.text.html.Markup;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.HyphenationAuto;
-import com.lowagie.text.pdf.HyphenationEvent;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Element;
+import org.openpdf.text.ElementTags;
+import org.openpdf.text.Font;
+import org.openpdf.text.FontFactory;
+import org.openpdf.text.FontFactoryImp;
+import org.openpdf.text.ListItem;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.html.HtmlTags;
+import org.openpdf.text.html.Markup;
+import org.openpdf.text.pdf.BaseFont;
+import org.openpdf.text.pdf.HyphenationAuto;
+import org.openpdf.text.pdf.HyphenationEvent;
 
 /**
  *

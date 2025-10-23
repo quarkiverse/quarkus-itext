@@ -54,11 +54,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Font;
-import com.lowagie.text.Image;
-import com.lowagie.text.SplitCharacter;
-import com.lowagie.text.Utilities;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Font;
+import org.openpdf.text.Image;
+import org.openpdf.text.SplitCharacter;
+import org.openpdf.text.Utilities;
 
 /**
  * A <CODE>PdfChunk</CODE> is the PDF translation of a <CODE>Chunk</CODE>.

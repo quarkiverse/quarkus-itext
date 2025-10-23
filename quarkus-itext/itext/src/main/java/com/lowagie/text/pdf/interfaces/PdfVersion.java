@@ -49,8 +49,8 @@
 
 package com.lowagie.text.pdf.interfaces;
 
-import com.lowagie.text.pdf.PdfDeveloperExtension;
-import com.lowagie.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfDeveloperExtension;
+import org.openpdf.text.pdf.PdfName;
 
 /**
  * The PDF version is described in the PDF Reference 1.7 p92

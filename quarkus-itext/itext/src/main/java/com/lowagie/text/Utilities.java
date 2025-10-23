@@ -58,7 +58,7 @@ import java.util.Hashtable;
 import java.util.Properties;
 import java.util.Set;
 
-import com.lowagie.text.pdf.PRTokeniser;
+import org.openpdf.text.pdf.PRTokeniser;
 
 /**
  * A collection of convenience methods that were present in many different iText

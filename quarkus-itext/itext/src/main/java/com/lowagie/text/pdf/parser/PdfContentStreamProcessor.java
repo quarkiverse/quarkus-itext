@@ -55,22 +55,22 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.Stack;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.pdf.CMapAwareDocumentFont;
-import com.lowagie.text.pdf.DocumentFont;
-import com.lowagie.text.pdf.PRIndirectReference;
-import com.lowagie.text.pdf.PRStream;
-import com.lowagie.text.pdf.PRTokeniser;
-import com.lowagie.text.pdf.PdfArray;
-import com.lowagie.text.pdf.PdfContentParser;
-import com.lowagie.text.pdf.PdfDictionary;
-import com.lowagie.text.pdf.PdfLiteral;
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfNumber;
-import com.lowagie.text.pdf.PdfObject;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStream;
-import com.lowagie.text.pdf.PdfString;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.pdf.CMapAwareDocumentFont;
+import org.openpdf.text.pdf.DocumentFont;
+import org.openpdf.text.pdf.PRIndirectReference;
+import org.openpdf.text.pdf.PRStream;
+import org.openpdf.text.pdf.PRTokeniser;
+import org.openpdf.text.pdf.PdfArray;
+import org.openpdf.text.pdf.PdfContentParser;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfLiteral;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfNumber;
+import org.openpdf.text.pdf.PdfObject;
+import org.openpdf.text.pdf.PdfReader;
+import org.openpdf.text.pdf.PdfStream;
+import org.openpdf.text.pdf.PdfString;
 
 /**
  * Processor for a PDF content Stream.

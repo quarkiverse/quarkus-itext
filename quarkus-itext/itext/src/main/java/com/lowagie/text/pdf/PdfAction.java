@@ -53,7 +53,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import com.lowagie.text.pdf.collection.PdfTargetDictionary;
+import org.openpdf.text.pdf.collection.PdfTargetDictionary;
 
 /**
  * A <CODE>PdfAction</CODE> defines an action that can be triggered from a PDF file.

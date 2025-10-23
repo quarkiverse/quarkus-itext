@@ -47,7 +47,7 @@
 
 package com.lowagie.text.html.simpleparser;
 
-import com.lowagie.text.Paragraph;
+import org.openpdf.text.Paragraph;
 
 /**
  *

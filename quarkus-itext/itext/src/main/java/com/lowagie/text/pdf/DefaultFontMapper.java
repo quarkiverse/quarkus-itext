@@ -50,7 +50,7 @@ import java.awt.Font;
 import java.io.File;
 import java.util.HashMap;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * Default class to map awt fonts to BaseFont.

@@ -46,7 +46,7 @@
  */
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Rectangle;
 
 /**
  * An event called for a single cell.

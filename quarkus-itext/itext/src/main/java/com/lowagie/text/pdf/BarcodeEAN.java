@@ -52,8 +52,8 @@ import java.awt.Image;
 import java.awt.image.MemoryImageSource;
 import java.util.Arrays;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Rectangle;
 
 /**
  * Generates barcodes in several formats: EAN13, EAN8, UPCA, UPCE,

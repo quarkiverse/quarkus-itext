@@ -55,9 +55,9 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.pdf.fonts.FontsResourceAnchor;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.pdf.fonts.FontsResourceAnchor;
 
 /**
  * Reads a Type1 font

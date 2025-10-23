@@ -58,27 +58,27 @@ import java.util.HashMap;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.DocListener;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.ElementTags;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.FontFactoryImp;
-import com.lowagie.text.HeaderFooter;
-import com.lowagie.text.Image;
-import com.lowagie.text.List;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.TextElementArray;
-import com.lowagie.text.html.HtmlTags;
-import com.lowagie.text.html.Markup;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.draw.LineSeparator;
-import com.lowagie.text.xml.simpleparser.SimpleXMLDocHandler;
-import com.lowagie.text.xml.simpleparser.SimpleXMLParser;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.DocListener;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ElementTags;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.FontFactoryImp;
+import org.openpdf.text.HeaderFooter;
+import org.openpdf.text.Image;
+import org.openpdf.text.List;
+import org.openpdf.text.ListItem;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.TextElementArray;
+import org.openpdf.text.html.HtmlTags;
+import org.openpdf.text.html.Markup;
+import org.openpdf.text.pdf.PdfPTable;
+import org.openpdf.text.pdf.draw.LineSeparator;
+import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
+import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
 
 public class HTMLWorker implements SimpleXMLDocHandler, DocListener {
 

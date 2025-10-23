@@ -68,7 +68,7 @@ import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.lowagie.text.xml.XmlDomWriter;
+import org.openpdf.text.xml.XmlDomWriter;
 
 /**
  * Processes XFA forms.

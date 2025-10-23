@@ -54,7 +54,7 @@ import java.util.Properties;
 
 import org.xml.sax.Attributes;
 
-import com.lowagie.text.DocListener;
+import org.openpdf.text.DocListener;
 
 /**
  * The <CODE>Tags</CODE>-class maps several XHTML-tags to iText-objects.

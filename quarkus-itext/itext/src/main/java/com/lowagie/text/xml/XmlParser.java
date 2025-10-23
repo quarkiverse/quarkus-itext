@@ -61,8 +61,8 @@ import javax.xml.parsers.SAXParserFactory;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.lowagie.text.DocListener;
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.DocListener;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * This class can be used to parse an XML file.

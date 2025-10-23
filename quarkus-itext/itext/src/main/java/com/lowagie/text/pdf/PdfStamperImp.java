@@ -55,16 +55,16 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.exceptions.BadPasswordException;
-import com.lowagie.text.pdf.collection.PdfCollection;
-import com.lowagie.text.pdf.interfaces.PdfViewerPreferences;
-import com.lowagie.text.pdf.internal.PdfViewerPreferencesImp;
-import com.lowagie.text.xml.xmp.XmpReader;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.exceptions.BadPasswordException;
+import org.openpdf.text.pdf.collection.PdfCollection;
+import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
+import org.openpdf.text.pdf.internal.PdfViewerPreferencesImp;
+import org.openpdf.text.xml.xmp.XmpReader;
 
 public class PdfStamperImp extends PdfWriter {
     HashMap readers2intrefs = new HashMap();

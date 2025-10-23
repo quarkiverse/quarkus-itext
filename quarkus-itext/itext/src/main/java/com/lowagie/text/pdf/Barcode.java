@@ -50,9 +50,9 @@ package com.lowagie.text.pdf;
 
 import java.awt.Color;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
 
 /**
  * Base class containing properties and methods common to all

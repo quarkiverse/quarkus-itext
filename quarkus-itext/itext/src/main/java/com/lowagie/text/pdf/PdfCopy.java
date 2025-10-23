@@ -54,10 +54,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Rectangle;
 
 /**
  * Make copies of PDF documents. Documents can be edited after reading and

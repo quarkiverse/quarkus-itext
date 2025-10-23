@@ -49,9 +49,9 @@
 
 package com.lowagie.text.pdf.interfaces;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfName;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.pdf.PdfAction;
+import org.openpdf.text.pdf.PdfName;
 
 /**
  * A PDF document can have an open action and other additional actions.

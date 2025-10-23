@@ -54,8 +54,8 @@ package com.lowagie.text.html;
 
 import java.util.HashMap;
 
-import com.lowagie.text.ElementTags;
-import com.lowagie.text.FontFactory;
+import org.openpdf.text.ElementTags;
+import org.openpdf.text.FontFactory;
 
 /**
  * The <CODE>Tags</CODE>-class maps several XHTML-tags to iText-objects.

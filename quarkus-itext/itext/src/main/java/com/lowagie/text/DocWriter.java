@@ -55,7 +55,7 @@ import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.Properties;
 
-import com.lowagie.text.pdf.OutputStreamCounter;
+import org.openpdf.text.pdf.OutputStreamCounter;
 
 /**
  * An abstract <CODE>Writer</CODE> class for documents.

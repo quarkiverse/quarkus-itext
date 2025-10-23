@@ -47,8 +47,8 @@
 
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Image;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Image;
 
 /**
  * The content where Type3 glyphs are written to.

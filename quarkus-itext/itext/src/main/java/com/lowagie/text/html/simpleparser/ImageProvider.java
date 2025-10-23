@@ -49,8 +49,8 @@ package com.lowagie.text.html.simpleparser;
 
 import java.util.HashMap;
 
-import com.lowagie.text.DocListener;
-import com.lowagie.text.Image;
+import org.openpdf.text.DocListener;
+import org.openpdf.text.Image;
 
 public interface ImageProvider {
     Image getImage(String src, HashMap h, ChainedProperties cprops, DocListener doc);

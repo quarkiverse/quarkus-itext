@@ -61,7 +61,7 @@ import java.io.RandomAccessFile;
 import java.net.URL;
 import java.nio.channels.FileChannel;
 
-import com.lowagie.text.Document;
+import org.openpdf.text.Document;
 
 /**
  * An implementation of a RandomAccessFile for input only

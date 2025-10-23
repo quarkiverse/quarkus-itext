@@ -109,7 +109,7 @@ import javax.imageio.ImageWriter;
 import javax.imageio.plugins.jpeg.JPEGImageWriteParam;
 import javax.imageio.stream.ImageOutputStream;
 
-import com.lowagie.text.pdf.internal.PolylineShape;
+import org.openpdf.text.pdf.internal.PolylineShape;
 
 public class PdfGraphics2D extends Graphics2D {
 

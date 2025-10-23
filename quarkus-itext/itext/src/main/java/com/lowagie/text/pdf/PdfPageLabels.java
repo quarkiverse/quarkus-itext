@@ -53,9 +53,9 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.factories.RomanAlphabetFactory;
-import com.lowagie.text.factories.RomanNumberFactory;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.factories.RomanAlphabetFactory;
+import org.openpdf.text.factories.RomanNumberFactory;
 
 /**
  * Page labels are used to identify each

@@ -55,9 +55,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.Hashtable;
 
-import com.lowagie.text.BadElementException;
-import com.lowagie.text.Image;
-import com.lowagie.text.pdf.codec.CCITTG4Encoder;
+import org.openpdf.text.BadElementException;
+import org.openpdf.text.Image;
+import org.openpdf.text.pdf.codec.CCITTG4Encoder;
 
 /**
  * A DataMatrix 2D barcode generator.

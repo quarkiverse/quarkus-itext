@@ -49,7 +49,7 @@
 
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Rectangle;
 
 /**
  * <CODE>PdfRectangle</CODE> is the PDF Rectangle object.

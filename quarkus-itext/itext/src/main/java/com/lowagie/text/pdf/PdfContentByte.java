@@ -58,16 +58,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import com.lowagie.text.Annotation;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.ImgJBIG2;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.exceptions.IllegalPdfSyntaxException;
-import com.lowagie.text.pdf.internal.PdfAnnotationsImp;
-import com.lowagie.text.pdf.internal.PdfXConformanceImp;
+import org.openpdf.text.Annotation;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.ImgJBIG2;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.exceptions.IllegalPdfSyntaxException;
+import org.openpdf.text.pdf.internal.PdfAnnotationsImp;
+import org.openpdf.text.pdf.internal.PdfXConformanceImp;
 
 /**
  * <CODE>PdfContentByte</CODE> is an object containing the user positioned

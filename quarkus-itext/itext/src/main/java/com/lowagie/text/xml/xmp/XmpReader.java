@@ -63,8 +63,8 @@ import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.xml.XmlDomWriter;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.xml.XmlDomWriter;
 
 /**
  * Reads an XMP stream into an org.w3c.dom.Document objects.

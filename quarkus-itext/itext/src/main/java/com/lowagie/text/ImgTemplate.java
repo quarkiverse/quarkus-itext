@@ -51,7 +51,7 @@ package com.lowagie.text;
 
 import java.net.URL;
 
-import com.lowagie.text.pdf.PdfTemplate;
+import org.openpdf.text.pdf.PdfTemplate;
 
 /**
  * PdfTemplate that has to be inserted into the document

@@ -48,10 +48,10 @@ package com.lowagie.text.pdf;
 
 import java.util.ArrayList;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Font;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Utilities;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Font;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.Utilities;
 
 /**
  * Selects the appropriate fonts that contain the glyphs needed to

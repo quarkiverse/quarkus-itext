@@ -57,7 +57,7 @@ import java.util.Hashtable;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.DocumentException;
+import org.openpdf.text.DocumentException;
 
 /**
  * Creates a CJK font compatible with the fonts in the Adobe Asian font Pack.

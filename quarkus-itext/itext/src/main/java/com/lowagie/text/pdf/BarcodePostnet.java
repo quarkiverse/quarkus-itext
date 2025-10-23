@@ -51,7 +51,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.MemoryImageSource;
 
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Rectangle;
 
 /**
  * Implements the Postnet and Planet barcodes. The default parameters are:

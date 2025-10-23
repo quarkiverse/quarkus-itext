@@ -46,7 +46,7 @@
  */
 package com.lowagie.text;
 
-import com.lowagie.text.factories.RomanNumberFactory;
+import org.openpdf.text.factories.RomanNumberFactory;
 
 /**
  *

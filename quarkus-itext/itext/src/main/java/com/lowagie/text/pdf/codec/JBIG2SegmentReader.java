@@ -57,7 +57,7 @@ import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import com.lowagie.text.pdf.RandomAccessFileOrArray;
+import org.openpdf.text.pdf.RandomAccessFileOrArray;
 
 /**
  * Class to read a JBIG2 file at a basic level: understand all the segments,

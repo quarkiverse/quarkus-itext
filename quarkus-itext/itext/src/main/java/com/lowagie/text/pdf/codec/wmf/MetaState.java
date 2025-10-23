@@ -54,7 +54,7 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Stack;
 
-import com.lowagie.text.pdf.PdfContentByte;
+import org.openpdf.text.pdf.PdfContentByte;
 
 public class MetaState {
 

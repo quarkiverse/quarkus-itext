@@ -56,9 +56,9 @@ import java.io.Reader;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.lowagie.text.DocListener;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.xml.XmlParser;
+import org.openpdf.text.DocListener;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.xml.XmlParser;
 
 /**
  * This class can be used to parse some HTML files.

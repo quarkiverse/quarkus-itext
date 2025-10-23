@@ -54,8 +54,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * Subsets a True Type font by removing the unneeded glyphs from

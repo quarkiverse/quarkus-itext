@@ -53,7 +53,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.lowagie.text.Utilities;
+import org.openpdf.text.Utilities;
 
 public class InputMeta {
 

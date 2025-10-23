@@ -53,7 +53,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-import com.lowagie.text.pdf.collection.PdfCollectionItem;
+import org.openpdf.text.pdf.collection.PdfCollectionItem;
 
 /**
  * Specifies a file or an URL. The file can be extern or embedded.

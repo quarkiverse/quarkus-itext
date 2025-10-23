@@ -52,9 +52,9 @@ package com.lowagie.text.pdf;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * <CODE>PdfPages</CODE> is the PDF Pages-object.

@@ -53,7 +53,7 @@ package com.lowagie.text.pdf;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
+import org.openpdf.text.DocWriter;
 
 /**
  * <CODE>PdfIndirectObject</CODE> is the Pdf indirect object.

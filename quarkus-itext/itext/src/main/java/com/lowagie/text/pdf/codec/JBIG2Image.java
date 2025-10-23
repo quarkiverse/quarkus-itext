@@ -49,10 +49,10 @@
 
 package com.lowagie.text.pdf.codec;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Image;
-import com.lowagie.text.ImgJBIG2;
-import com.lowagie.text.pdf.RandomAccessFileOrArray;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.ImgJBIG2;
+import org.openpdf.text.pdf.RandomAccessFileOrArray;
 
 /**
  * Support for JBIG2 Images.

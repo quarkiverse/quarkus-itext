@@ -48,7 +48,7 @@
  */
 package com.lowagie.text.factories;
 
-import com.lowagie.text.SpecialSymbol;
+import org.openpdf.text.SpecialSymbol;
 
 /**
  * This class can produce String combinations representing a number built with

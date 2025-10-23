@@ -51,8 +51,8 @@ package com.lowagie.text;
 
 import java.awt.Color;
 
-import com.lowagie.text.html.Markup;
-import com.lowagie.text.pdf.BaseFont;
+import org.openpdf.text.html.Markup;
+import org.openpdf.text.pdf.BaseFont;
 
 /**
  * Contains all the specifications of a font: fontfamily, size, style and color.

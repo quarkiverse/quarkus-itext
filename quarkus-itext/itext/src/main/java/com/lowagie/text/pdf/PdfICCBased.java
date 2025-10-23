@@ -48,7 +48,7 @@ package com.lowagie.text.pdf;
 
 import java.awt.color.ICC_Profile;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * A <CODE>PdfICCBased</CODE> defines a ColorSpace

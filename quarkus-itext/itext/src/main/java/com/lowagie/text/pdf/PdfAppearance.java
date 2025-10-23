@@ -49,7 +49,7 @@ package com.lowagie.text.pdf;
 
 import java.util.HashMap;
 
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Rectangle;
 
 /**
  * Implements the appearance stream to be used with form fields..

@@ -51,9 +51,9 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Element;
-import com.lowagie.text.Phrase;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Element;
+import org.openpdf.text.Phrase;
 
 /**
  * Writes text vertically. Note that the naming is done according

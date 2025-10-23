@@ -51,12 +51,12 @@ import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.Font;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.Rectangle;
 
 /**
  * Supports text, combo and list fields generating the correct appearances.

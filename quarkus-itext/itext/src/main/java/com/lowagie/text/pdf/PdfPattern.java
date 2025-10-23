@@ -46,7 +46,7 @@
  */
 package com.lowagie.text.pdf;
 
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * A <CODE>PdfPattern</CODE> defines a ColorSpace

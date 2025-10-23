@@ -49,8 +49,8 @@ package com.lowagie.text.pdf;
 import java.io.IOException;
 import java.util.HashMap;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  *

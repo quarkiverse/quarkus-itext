@@ -49,9 +49,9 @@
 
 package com.lowagie.text.pdf.interfaces;
 
-import com.lowagie.text.pdf.PdfAcroForm;
-import com.lowagie.text.pdf.PdfAnnotation;
-import com.lowagie.text.pdf.PdfFormField;
+import org.openpdf.text.pdf.PdfAcroForm;
+import org.openpdf.text.pdf.PdfAnnotation;
+import org.openpdf.text.pdf.PdfFormField;
 
 public interface PdfAnnotations {
 

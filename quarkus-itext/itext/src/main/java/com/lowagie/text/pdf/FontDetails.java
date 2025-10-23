@@ -53,8 +53,8 @@ import java.awt.font.GlyphVector;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.Utilities;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Utilities;
 
 /**
  * Each font in the document will have an instance of this class

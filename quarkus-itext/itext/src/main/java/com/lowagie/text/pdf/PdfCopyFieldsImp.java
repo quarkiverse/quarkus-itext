@@ -56,10 +56,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.exceptions.BadPasswordException;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.exceptions.BadPasswordException;
 
 /**
  *
