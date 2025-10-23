@@ -1,5 +1,5 @@
-import { pages } from 'build-time-data';
-import { LitElement, css, html } from 'lit';
+import {pages} from 'build-time-data';
+import {css, html, LitElement} from 'lit';
 import 'qwc/qwc-extension-link.js';
 
 const NAME = "OpenPDF";
