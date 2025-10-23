@@ -49,16 +49,15 @@
 
 package com.lowagie.text.html;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
 import org.openpdf.text.DocListener;
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.xml.XmlParser;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
 
 /**
  * This class can be used to parse some HTML files.

@@ -47,16 +47,12 @@
 
 package com.lowagie.text.pdf;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import org.openpdf.text.ExceptionConverter;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
-
-import org.openpdf.text.ExceptionConverter;
 
 /**
  * Supports fast encodings for winansi and PDFDocEncoding.

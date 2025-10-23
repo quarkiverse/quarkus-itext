@@ -49,9 +49,9 @@
 
 package com.lowagie.text.html;
 
-import java.awt.Color;
-
 import org.openpdf.text.Element;
+
+import java.awt.*;
 
 /**
  * This class converts a <CODE>String</CODE> to the HTML-format of a String.

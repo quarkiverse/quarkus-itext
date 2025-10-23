@@ -49,14 +49,7 @@
 
 package com.lowagie.text.pdf.internal;
 
-import org.openpdf.text.pdf.PdfArray;
-import org.openpdf.text.pdf.PdfBoolean;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfNumber;
-import org.openpdf.text.pdf.PdfObject;
-import org.openpdf.text.pdf.PdfReader;
-import org.openpdf.text.pdf.PdfWriter;
+import org.openpdf.text.pdf.*;
 import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
 
 /**

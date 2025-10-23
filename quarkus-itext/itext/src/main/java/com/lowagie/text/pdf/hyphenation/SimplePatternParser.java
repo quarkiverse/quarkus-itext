@@ -50,16 +50,16 @@
 
 package com.lowagie.text.pdf.hyphenation;
 
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.html.HtmlTags;
+import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
+import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.html.HtmlTags;
-import org.openpdf.text.xml.simpleparser.SimpleXMLDocHandler;
-import org.openpdf.text.xml.simpleparser.SimpleXMLParser;
 
 /**
  * Parses the xml hyphenation pattern.

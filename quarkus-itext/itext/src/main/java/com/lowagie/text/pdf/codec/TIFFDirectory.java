@@ -45,14 +45,14 @@
  */
 package com.lowagie.text.pdf.codec;
 
+import org.openpdf.text.pdf.RandomAccessFileOrArray;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
-
-import org.openpdf.text.pdf.RandomAccessFileOrArray;
 
 /**
  * A class representing an Image File Directory (IFD) from a TIFF 6.0

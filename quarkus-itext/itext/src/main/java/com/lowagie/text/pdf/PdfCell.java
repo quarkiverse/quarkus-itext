@@ -49,19 +49,10 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.*;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import org.openpdf.text.Anchor;
-import org.openpdf.text.Cell;
-import org.openpdf.text.Chunk;
-import org.openpdf.text.Element;
-import org.openpdf.text.Image;
-import org.openpdf.text.List;
-import org.openpdf.text.ListItem;
-import org.openpdf.text.Paragraph;
-import org.openpdf.text.Phrase;
-import org.openpdf.text.Rectangle;
 
 /**
  * A <CODE>PdfCell</CODE> is the PDF translation of a <CODE>Cell</CODE>.

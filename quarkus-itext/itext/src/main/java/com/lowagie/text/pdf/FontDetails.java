@@ -49,12 +49,12 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Utilities;
+
 import java.awt.font.GlyphVector;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
-
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Utilities;
 
 /**
  * Each font in the document will have an instance of this class

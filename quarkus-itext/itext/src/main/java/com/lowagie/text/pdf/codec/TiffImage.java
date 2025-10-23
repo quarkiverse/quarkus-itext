@@ -46,22 +46,17 @@
  */
 package com.lowagie.text.pdf.codec;
 
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.Jpeg;
+import org.openpdf.text.pdf.*;
+
 import java.awt.color.ICC_Profile;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.zip.DataFormatException;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.Inflater;
-
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Image;
-import org.openpdf.text.Jpeg;
-import org.openpdf.text.pdf.PdfArray;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfNumber;
-import org.openpdf.text.pdf.PdfString;
-import org.openpdf.text.pdf.RandomAccessFileOrArray;
 
 /**
  * Reads TIFF images

@@ -49,7 +49,7 @@
 
 package com.lowagie.text.pdf.codec.wmf;
 
-import java.awt.Color;
+import java.awt.*;
 import java.io.IOException;
 
 public class MetaPen extends MetaObject {

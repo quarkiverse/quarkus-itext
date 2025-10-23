@@ -49,14 +49,14 @@
 
 package com.lowagie.text.pdf.codec.wmf;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
 import org.openpdf.text.Document;
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Font;
 import org.openpdf.text.FontFactory;
 import org.openpdf.text.pdf.BaseFont;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 public class MetaFont extends MetaObject {
     static final String fontNames[] = {

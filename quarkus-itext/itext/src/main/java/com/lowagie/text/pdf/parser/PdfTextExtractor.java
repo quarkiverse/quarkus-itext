@@ -46,12 +46,12 @@
  */
 package com.lowagie.text.pdf.parser;
 
-import java.io.IOException;
-
 import org.openpdf.text.pdf.PdfDictionary;
 import org.openpdf.text.pdf.PdfName;
 import org.openpdf.text.pdf.PdfReader;
 import org.openpdf.text.pdf.RandomAccessFileOrArray;
+
+import java.io.IOException;
 
 /**
  * Extracts text from a PDF file.

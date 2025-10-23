@@ -49,45 +49,23 @@
 
 package com.lowagie.text.pdf;
 
-import java.awt.Color;
+import org.openpdf.text.*;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.pdf.collection.PdfCollection;
+import org.openpdf.text.pdf.events.PdfPageEventForwarder;
+import org.openpdf.text.pdf.interfaces.*;
+import org.openpdf.text.pdf.internal.PdfVersionImp;
+import org.openpdf.text.pdf.internal.PdfXConformanceImp;
+import org.openpdf.text.xml.xmp.XmpWriter;
+
+import java.awt.*;
 import java.awt.color.ICC_Profile;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.security.cert.Certificate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.TreeSet;
-
-import org.openpdf.text.DocListener;
-import org.openpdf.text.DocWriter;
-import org.openpdf.text.Document;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Image;
-import org.openpdf.text.ImgJBIG2;
-import org.openpdf.text.ImgWMF;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.Table;
-import org.openpdf.text.pdf.collection.PdfCollection;
-import org.openpdf.text.pdf.events.PdfPageEventForwarder;
-import org.openpdf.text.pdf.interfaces.PdfAnnotations;
-import org.openpdf.text.pdf.interfaces.PdfDocumentActions;
-import org.openpdf.text.pdf.interfaces.PdfEncryptionSettings;
-import org.openpdf.text.pdf.interfaces.PdfPageActions;
-import org.openpdf.text.pdf.interfaces.PdfRunDirection;
-import org.openpdf.text.pdf.interfaces.PdfVersion;
-import org.openpdf.text.pdf.interfaces.PdfViewerPreferences;
-import org.openpdf.text.pdf.interfaces.PdfXConformance;
-import org.openpdf.text.pdf.internal.PdfVersionImp;
-import org.openpdf.text.pdf.internal.PdfXConformanceImp;
-import org.openpdf.text.xml.xmp.XmpWriter;
+import java.util.*;
 
 /**
  * A <CODE>DocWriter</CODE> class for PDF.

@@ -49,11 +49,11 @@
 
 package com.lowagie.text;
 
-import java.awt.Color;
+import org.openpdf.text.pdf.BaseFont;
+
+import java.awt.*;
 import java.util.Properties;
 import java.util.Set;
-
-import org.openpdf.text.pdf.BaseFont;
 
 /**
  * If you are using True Type fonts, you can declare the paths of the different ttf- and ttc-files

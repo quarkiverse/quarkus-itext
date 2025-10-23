@@ -49,12 +49,12 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.Image;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
-import org.openpdf.text.Image;
 
 /**
  * <CODE>PdfImage</CODE> is a <CODE>PdfStream</CODE> containing an image-<CODE>Dictionary</CODE> and -stream.

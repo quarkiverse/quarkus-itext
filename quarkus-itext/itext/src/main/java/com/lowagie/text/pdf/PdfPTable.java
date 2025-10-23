@@ -49,16 +49,10 @@
 
 package com.lowagie.text.pdf;
 
-import java.util.ArrayList;
-
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.ElementListener;
-import org.openpdf.text.Image;
-import org.openpdf.text.LargeElement;
-import org.openpdf.text.Phrase;
-import org.openpdf.text.Rectangle;
+import org.openpdf.text.*;
 import org.openpdf.text.pdf.events.PdfPTableEventForwarder;
+
+import java.util.ArrayList;
 
 /**
  * This is a table that can be put at an absolute position but can also

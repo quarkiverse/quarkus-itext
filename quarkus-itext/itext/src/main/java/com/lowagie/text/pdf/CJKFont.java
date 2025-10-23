@@ -49,15 +49,11 @@
 
 package com.lowagie.text.pdf;
 
+import org.openpdf.text.DocumentException;
+
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Properties;
-import java.util.StringTokenizer;
-
-import org.openpdf.text.DocumentException;
+import java.util.*;
 
 /**
  * Creates a CJK font compatible with the fonts in the Adobe Asian font Pack.

@@ -1,30 +1,24 @@
 package io.quarkiverse.itext.deployment;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import org.jboss.jandex.ClassInfo;
-import org.jboss.jandex.DotName;
-
-import org.openpdf.text.Image;
-import org.openpdf.text.PageSize;
-import org.openpdf.text.Utilities;
-import org.openpdf.text.pdf.PdfName;
-
 import io.quarkiverse.itext.runtime.ItextFeature;
 import io.quarkiverse.itext.runtime.ItextRecorder;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.ExecutionTime;
 import io.quarkus.deployment.annotations.Record;
-import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
-import io.quarkus.deployment.builditem.FeatureBuildItem;
-import io.quarkus.deployment.builditem.IndexDependencyBuildItem;
-import io.quarkus.deployment.builditem.NativeImageEnableAllCharsetsBuildItem;
-import io.quarkus.deployment.builditem.NativeImageFeatureBuildItem;
+import io.quarkus.deployment.builditem.*;
 import io.quarkus.deployment.builditem.nativeimage.NativeImageResourcePatternsBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
+import org.jboss.jandex.ClassInfo;
+import org.jboss.jandex.DotName;
+import org.openpdf.text.Image;
+import org.openpdf.text.PageSize;
+import org.openpdf.text.Utilities;
+import org.openpdf.text.pdf.PdfName;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 class ItextProcessor {
 

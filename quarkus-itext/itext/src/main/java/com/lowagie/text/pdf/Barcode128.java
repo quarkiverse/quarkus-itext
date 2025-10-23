@@ -48,14 +48,12 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.image.MemoryImageSource;
-
 import org.openpdf.text.Element;
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
+import java.awt.image.MemoryImageSource;
 
 /**
  * Implements the code 128 and UCC/EAN-128. Other symbologies are allowed in raw mode.

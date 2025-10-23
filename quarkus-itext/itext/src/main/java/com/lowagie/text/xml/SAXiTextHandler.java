@@ -49,45 +49,18 @@
 
 package com.lowagie.text.xml;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.EmptyStackException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Stack;
-
-import org.xml.sax.Attributes;
-import org.xml.sax.helpers.DefaultHandler;
-
-import org.openpdf.text.Anchor;
-import org.openpdf.text.Annotation;
-import org.openpdf.text.BadElementException;
-import org.openpdf.text.Cell;
-import org.openpdf.text.Chapter;
-import org.openpdf.text.Chunk;
-import org.openpdf.text.DocListener;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.ElementTags;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Font;
-import org.openpdf.text.Image;
+import org.openpdf.text.*;
 import org.openpdf.text.List;
-import org.openpdf.text.ListItem;
-import org.openpdf.text.Meta;
-import org.openpdf.text.PageSize;
-import org.openpdf.text.Paragraph;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.Section;
-import org.openpdf.text.Table;
-import org.openpdf.text.TextElementArray;
 import org.openpdf.text.factories.ElementFactory;
 import org.openpdf.text.html.HtmlTagMap;
 import org.openpdf.text.pdf.BaseFont;
 import org.openpdf.text.pdf.draw.LineSeparator;
 import org.openpdf.text.xml.simpleparser.EntitiesToSymbol;
+import org.xml.sax.Attributes;
+import org.xml.sax.helpers.DefaultHandler;
+
+import java.lang.reflect.Field;
+import java.util.*;
 
 /**
  * This class is a Handler that controls the iText XML to PDF conversion.

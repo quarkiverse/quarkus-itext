@@ -49,14 +49,9 @@
 
 package com.lowagie.text.pdf;
 
-import java.util.ArrayList;
+import org.openpdf.text.*;
 
-import org.openpdf.text.Chunk;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Element;
-import org.openpdf.text.ElementListener;
-import org.openpdf.text.Phrase;
-import org.openpdf.text.Rectangle;
+import java.util.ArrayList;
 
 /**
  * Formats content into one or more columns bounded by a

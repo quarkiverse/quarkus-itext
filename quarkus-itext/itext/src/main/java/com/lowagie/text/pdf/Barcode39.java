@@ -48,14 +48,12 @@
  */
 package com.lowagie.text.pdf;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Image;
-import java.awt.image.MemoryImageSource;
-
 import org.openpdf.text.Element;
 import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Rectangle;
+
+import java.awt.*;
+import java.awt.image.MemoryImageSource;
 
 /**
  * Implements the code 39 and code 39 extended. The default parameters are:
