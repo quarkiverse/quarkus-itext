@@ -49,7 +49,7 @@
 
 package com.lowagie.text;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * A <CODE>RectangleReadOnly</CODE> is the representation of a geometric figure.

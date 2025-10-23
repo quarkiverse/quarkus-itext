@@ -49,12 +49,12 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.pdf.fonts.FontsResourceAnchor;
-
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.StringTokenizer;
+
+import org.openpdf.text.pdf.fonts.FontsResourceAnchor;
 
 public class GlyphList {
     private static HashMap unicode2names = new HashMap();

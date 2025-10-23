@@ -49,10 +49,24 @@
 
 package com.lowagie.text.pdf.internal;
 
-import org.openpdf.text.pdf.*;
-import org.openpdf.text.pdf.interfaces.PdfXConformance;
+import java.awt.Color;
 
-import java.awt.*;
+import org.openpdf.text.pdf.BaseFont;
+import org.openpdf.text.pdf.ExtendedColor;
+import org.openpdf.text.pdf.PatternColor;
+import org.openpdf.text.pdf.PdfArray;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfGState;
+import org.openpdf.text.pdf.PdfImage;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfNumber;
+import org.openpdf.text.pdf.PdfObject;
+import org.openpdf.text.pdf.PdfString;
+import org.openpdf.text.pdf.PdfWriter;
+import org.openpdf.text.pdf.PdfXConformanceException;
+import org.openpdf.text.pdf.ShadingColor;
+import org.openpdf.text.pdf.SpotColor;
+import org.openpdf.text.pdf.interfaces.PdfXConformance;
 
 public class PdfXConformanceImp implements PdfXConformance {
 

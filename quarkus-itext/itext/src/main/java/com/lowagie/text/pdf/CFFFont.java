@@ -68,10 +68,10 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.ExceptionConverter;
-
 import java.util.Iterator;
 import java.util.LinkedList;
+
+import org.openpdf.text.ExceptionConverter;
 
 public class CFFFont {
 

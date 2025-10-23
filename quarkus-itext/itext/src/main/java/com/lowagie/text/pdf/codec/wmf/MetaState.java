@@ -49,11 +49,12 @@
 
 package com.lowagie.text.pdf.codec.wmf;
 
-import org.openpdf.text.pdf.PdfContentByte;
-
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Stack;
+
+import org.openpdf.text.pdf.PdfContentByte;
 
 public class MetaState {
 

@@ -48,16 +48,16 @@
  */
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.Document;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Rectangle;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Rectangle;
 
 /**
  * Make copies of PDF documents. Documents can be edited after reading and

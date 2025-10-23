@@ -49,10 +49,14 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.*;
-
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import org.openpdf.text.Cell;
+import org.openpdf.text.Element;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.Row;
+import org.openpdf.text.Table;
 
 /**
  * <CODE>PdfTable</CODE> is an object that contains the graphics and text of a table.

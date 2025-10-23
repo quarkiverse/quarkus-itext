@@ -49,16 +49,16 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.DocWriter;
-import org.openpdf.text.Document;
-import org.openpdf.text.ExceptionConverter;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
+
+import org.openpdf.text.DocWriter;
+import org.openpdf.text.Document;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  * <CODE>PdfStream</CODE> is the Pdf stream object.

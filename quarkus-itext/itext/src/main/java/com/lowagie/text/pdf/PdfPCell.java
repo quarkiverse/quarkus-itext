@@ -49,10 +49,16 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.*;
-import org.openpdf.text.pdf.events.PdfPCellEventForwarder;
-
 import java.util.List;
+
+import org.openpdf.text.Chunk;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.Phrase;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.pdf.events.PdfPCellEventForwarder;
 
 /**
  * A cell in a PdfPTable.

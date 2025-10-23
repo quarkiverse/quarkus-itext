@@ -1,6 +1,10 @@
 package com.lowagie.text.pdf.collection;
 
-import org.openpdf.text.pdf.*;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfNumber;
+import org.openpdf.text.pdf.PdfObject;
+import org.openpdf.text.pdf.PdfString;
 
 public class PdfTargetDictionary extends PdfDictionary {
 

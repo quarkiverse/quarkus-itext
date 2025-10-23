@@ -49,12 +49,12 @@
 
 package com.lowagie.text.pdf;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import org.openpdf.text.Chunk;
 import org.openpdf.text.Element;
 import org.openpdf.text.ListItem;
-
-import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * <CODE>PdfLine</CODE> defines an array with <CODE>PdfChunk</CODE>-objects

@@ -46,9 +46,9 @@
  */
 package com.lowagie.text.pdf.parser;
 
-import org.openpdf.text.pdf.PdfLiteral;
-
 import java.util.ArrayList;
+
+import org.openpdf.text.pdf.PdfLiteral;
 
 /**
  * Interface implemented by a series of content operators

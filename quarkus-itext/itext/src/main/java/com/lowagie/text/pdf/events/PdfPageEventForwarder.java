@@ -49,14 +49,14 @@
 
 package com.lowagie.text.pdf.events;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import org.openpdf.text.Document;
 import org.openpdf.text.Paragraph;
 import org.openpdf.text.Rectangle;
 import org.openpdf.text.pdf.PdfPageEvent;
 import org.openpdf.text.pdf.PdfWriter;
-
-import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * If you want to add more than one page event to a PdfWriter,

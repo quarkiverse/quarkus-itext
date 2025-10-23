@@ -49,14 +49,14 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.DocWriter;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
+
+import org.openpdf.text.DocWriter;
 
 /**
  * Acts like a <CODE>StringBuffer</CODE> but works with <CODE>byte</CODE> arrays.

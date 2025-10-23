@@ -49,15 +49,21 @@
 
 package com.lowagie.text.pdf.codec.wmf;
 
+import java.awt.Color;
+import java.awt.Point;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Image;
 import org.openpdf.text.pdf.BaseFont;
 import org.openpdf.text.pdf.PdfContentByte;
 import org.openpdf.text.pdf.codec.BmpImage;
-
-import java.awt.*;
-import java.io.*;
-import java.util.ArrayList;
 
 public class MetaDo {
 

@@ -46,11 +46,11 @@
  */
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.ExceptionConverter;
-
 import java.io.IOException;
 import java.util.HashMap;
+
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.ExceptionConverter;
 
 /**
  *

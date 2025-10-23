@@ -49,15 +49,25 @@
 
 package com.lowagie.text.pdf.internal;
 
-import org.openpdf.text.Annotation;
-import org.openpdf.text.ExceptionConverter;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.pdf.*;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import org.openpdf.text.Annotation;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.pdf.PdfAcroForm;
+import org.openpdf.text.pdf.PdfAction;
+import org.openpdf.text.pdf.PdfAnnotation;
+import org.openpdf.text.pdf.PdfArray;
+import org.openpdf.text.pdf.PdfFileSpecification;
+import org.openpdf.text.pdf.PdfFormField;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfObject;
+import org.openpdf.text.pdf.PdfRectangle;
+import org.openpdf.text.pdf.PdfString;
+import org.openpdf.text.pdf.PdfWriter;
 
 public class PdfAnnotationsImp {
 

@@ -49,15 +49,15 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.Document;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.pdf.fonts.FontsResourceAnchor;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.StringTokenizer;
+
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.pdf.fonts.FontsResourceAnchor;
 
 /**
  * Reads a Type1 font

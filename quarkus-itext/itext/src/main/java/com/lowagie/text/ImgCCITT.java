@@ -49,9 +49,9 @@
 
 package com.lowagie.text;
 
-import org.openpdf.text.pdf.codec.TIFFFaxDecoder;
-
 import java.net.URL;
+
+import org.openpdf.text.pdf.codec.TIFFFaxDecoder;
 
 /**
  * CCITT Image data that has to be inserted into the document

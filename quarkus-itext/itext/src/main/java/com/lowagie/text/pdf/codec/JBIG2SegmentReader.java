@@ -49,11 +49,15 @@
 
 package com.lowagie.text.pdf.codec;
 
-import org.openpdf.text.pdf.RandomAccessFileOrArray;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.*;
+import java.util.Iterator;
+import java.util.SortedMap;
+import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+import org.openpdf.text.pdf.RandomAccessFileOrArray;
 
 /**
  * Class to read a JBIG2 file at a basic level: understand all the segments,

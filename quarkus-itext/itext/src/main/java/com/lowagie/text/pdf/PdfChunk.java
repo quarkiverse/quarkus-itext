@@ -49,14 +49,16 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.*;
-import org.openpdf.text.Font;
-import org.openpdf.text.Image;
-
-import java.awt.*;
+import java.awt.Color;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Font;
+import org.openpdf.text.Image;
+import org.openpdf.text.SplitCharacter;
+import org.openpdf.text.Utilities;
 
 /**
  * A <CODE>PdfChunk</CODE> is the PDF translation of a <CODE>Chunk</CODE>.

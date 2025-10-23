@@ -49,10 +49,10 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.DocumentException;
-
 import java.io.IOException;
 import java.util.HashMap;
+
+import org.openpdf.text.DocumentException;
 
 /**
  * Enumerates all the fonts inside a True Type Collection.

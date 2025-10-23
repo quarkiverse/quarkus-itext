@@ -49,9 +49,9 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.Rectangle;
-
 import java.io.IOException;
+
+import org.openpdf.text.Rectangle;
 
 /**
  * Implements the form XObject.

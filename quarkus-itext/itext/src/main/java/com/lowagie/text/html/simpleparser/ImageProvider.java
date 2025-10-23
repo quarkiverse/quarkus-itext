@@ -47,10 +47,10 @@
 
 package com.lowagie.text.html.simpleparser;
 
+import java.util.HashMap;
+
 import org.openpdf.text.DocListener;
 import org.openpdf.text.Image;
-
-import java.util.HashMap;
 
 public interface ImageProvider {
     Image getImage(String src, HashMap h, ChainedProperties cprops, DocListener doc);

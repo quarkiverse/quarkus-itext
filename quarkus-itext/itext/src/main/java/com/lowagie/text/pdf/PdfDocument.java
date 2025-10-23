@@ -49,20 +49,43 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.*;
+import java.awt.Color;
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+import org.openpdf.text.Anchor;
+import org.openpdf.text.Annotation;
+import org.openpdf.text.BadElementException;
+import org.openpdf.text.Chunk;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ExceptionConverter;
 import org.openpdf.text.Font;
+import org.openpdf.text.HeaderFooter;
 import org.openpdf.text.Image;
 import org.openpdf.text.List;
+import org.openpdf.text.ListItem;
+import org.openpdf.text.MarkedObject;
+import org.openpdf.text.MarkedSection;
+import org.openpdf.text.Meta;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.Phrase;
 import org.openpdf.text.Rectangle;
+import org.openpdf.text.Section;
+import org.openpdf.text.SimpleTable;
+import org.openpdf.text.Table;
 import org.openpdf.text.pdf.collection.PdfCollection;
 import org.openpdf.text.pdf.draw.DrawInterface;
 import org.openpdf.text.pdf.internal.PdfAnnotationsImp;
 import org.openpdf.text.pdf.internal.PdfViewerPreferencesImp;
-
-import java.awt.*;
-import java.io.IOException;
-import java.text.DecimalFormat;
-import java.util.*;
 
 /**
  * <CODE>PdfDocument</CODE> is the class that is used by <CODE>PdfWriter</CODE>

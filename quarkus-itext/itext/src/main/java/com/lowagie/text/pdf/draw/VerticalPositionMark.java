@@ -49,13 +49,13 @@
 
 package com.lowagie.text.pdf.draw;
 
+import java.util.ArrayList;
+
 import org.openpdf.text.Chunk;
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Element;
 import org.openpdf.text.ElementListener;
 import org.openpdf.text.pdf.PdfContentByte;
-
-import java.util.ArrayList;
 
 /**
  * Helper class implementing the DrawInterface. Can be used to add

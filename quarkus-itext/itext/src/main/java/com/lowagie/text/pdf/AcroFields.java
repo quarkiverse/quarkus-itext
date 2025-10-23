@@ -46,18 +46,26 @@
  */
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.*;
-import org.openpdf.text.Image;
-import org.openpdf.text.Rectangle;
-import org.openpdf.text.pdf.codec.Base64;
-import org.w3c.dom.Node;
-
-import java.awt.*;
+import java.awt.Color;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+
+import org.w3c.dom.Node;
+
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Element;
+import org.openpdf.text.ExceptionConverter;
+import org.openpdf.text.Image;
+import org.openpdf.text.Rectangle;
+import org.openpdf.text.pdf.codec.Base64;
 
 /**
  * Query and change fields in existing documents either by method

@@ -51,8 +51,7 @@ package com.lowagie.text.pdf;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * <CODE>PdfName</CODE> is an object that can be used as a name in a PDF-file.

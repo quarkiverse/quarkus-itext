@@ -49,11 +49,11 @@
 
 package com.lowagie.text.pdf.codec.wmf;
 
-import org.openpdf.text.Utilities;
-
-import java.awt.*;
+import java.awt.Color;
 import java.io.IOException;
 import java.io.InputStream;
+
+import org.openpdf.text.Utilities;
 
 public class InputMeta {
 

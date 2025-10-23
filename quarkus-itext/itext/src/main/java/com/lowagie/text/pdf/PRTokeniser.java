@@ -49,9 +49,9 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.exceptions.InvalidPdfException;
-
 import java.io.IOException;
+
+import org.openpdf.text.exceptions.InvalidPdfException;
 
 /**
  *

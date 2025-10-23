@@ -48,11 +48,11 @@
 
 package com.lowagie.text.pdf;
 
-import org.openpdf.text.DocumentException;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
+
+import org.openpdf.text.DocumentException;
 
 /**
  * This class takes any PDF and returns exactly the same but

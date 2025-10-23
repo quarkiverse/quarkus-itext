@@ -48,13 +48,14 @@
 
 package com.lowagie.text.pdf;
 
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.image.MemoryImageSource;
+import java.util.ArrayList;
+
 import org.openpdf.text.BadElementException;
 import org.openpdf.text.Image;
 import org.openpdf.text.pdf.codec.CCITTG4Encoder;
-
-import java.awt.*;
-import java.awt.image.MemoryImageSource;
-import java.util.ArrayList;
 
 /**
  * Generates the 2D barcode PDF417. Supports dimensioning auto-sizing, fixed

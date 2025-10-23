@@ -1,5 +1,5 @@
-import {css, html, LitElement} from 'lit';
-import {pages} from 'build-time-data';
+import { LitElement, html, css} from 'lit';
+import { pages } from 'build-time-data';
 import 'qwc/qwc-extension-link.js';
 
 const NAME = "iText";

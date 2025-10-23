@@ -49,7 +49,7 @@
 
 package com.lowagie.text.pdf;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * A <CODE>PdfSpotColor</CODE> defines a ColorSpace
