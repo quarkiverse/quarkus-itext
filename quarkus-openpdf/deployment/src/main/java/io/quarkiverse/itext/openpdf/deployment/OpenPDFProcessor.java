@@ -1,6 +1,12 @@
 package io.quarkiverse.itext.openpdf.deployment;
 
 import io.quarkiverse.itext.openpdf.runtime.OpenPDFFeature;
+import io.quarkus.logging.Log;
+import org.jboss.jandex.ClassInfo;
+import org.jboss.jandex.DotName;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 import io.quarkus.deployment.IsNormal;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
@@ -9,13 +15,9 @@ import io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBundleBuil
 import io.quarkus.deployment.builditem.nativeimage.NativeImageResourcePatternsBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
 import io.quarkus.deployment.pkg.builditem.UberJarMergedResourceBuildItem;
-import io.quarkus.logging.Log;
-import org.jboss.jandex.ClassInfo;
-import org.jboss.jandex.DotName;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+
+
 
 class OpenPDFProcessor {
 

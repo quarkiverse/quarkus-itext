@@ -1,16 +1,18 @@
 package io.quarkiverse.itext.openpdf.deployment;
 
 import io.quarkus.deployment.IsDevelopment;
+import java.util.jar.Manifest;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.devui.spi.page.CardPageBuildItem;
 import io.quarkus.devui.spi.page.ExternalPageBuilder;
 import io.quarkus.devui.spi.page.Page;
 import org.openpdf.text.pdf.interfaces.PdfVersion;
-
 import java.io.InputStream;
 import java.net.URL;
-import java.util.jar.Manifest;
+
+
+
 
 /**
  * Dev UI card for displaying important details such as the OpenPDF library version.

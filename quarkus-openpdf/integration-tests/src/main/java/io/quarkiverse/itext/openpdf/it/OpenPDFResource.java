@@ -1,3 +1,40 @@
+package io.quarkiverse.itext.openpdf.it;
+
+import java.awt.Graphics2D;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import java.util.Objects;
+import javax.imageio.ImageIO;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import org.openpdf.pdf.ITextRenderer;
+import org.openpdf.renderer.PDFFile;
+import java.awt.Image;
+import org.openpdf.renderer.PDFPage;
+import org.openpdf.text.Document;
+import org.openpdf.text.DocumentException;
+import org.openpdf.text.Font;
+import org.openpdf.text.Paragraph;
+import org.openpdf.text.pdf.BaseFont;
+import org.openpdf.text.pdf.PdfDictionary;
+import org.openpdf.text.pdf.PdfName;
+import org.openpdf.text.pdf.PdfPCell;
+import org.openpdf.text.pdf.PdfPTable;
+import java.awt.Rectangle;
+import org.openpdf.text.pdf.PdfReader;
+import org.openpdf.text.pdf.PdfString;
+import org.openpdf.text.pdf.PdfWriter;
+import org.openpdf.text.pdf.parser.PdfTextExtractor;
+import org.openpdf.text.xml.xmp.XmpWriter;
+import java.awt.color.ColorSpace;
+import java.awt.color.ICC_Profile;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+
 /*
 * Licensed to the Apache Software Foundation (ASF) under one or more
 * contributor license agreements.  See the NOTICE file distributed with
@@ -14,46 +51,11 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package io.quarkiverse.itext.openpdf.it;
 
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.color.ColorSpace;
-import java.awt.color.ICC_Profile;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.util.Objects;
 
-import javax.imageio.ImageIO;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
 
-import org.openpdf.pdf.ITextRenderer;
-import org.openpdf.renderer.PDFFile;
-import org.openpdf.renderer.PDFPage;
 
-import org.openpdf.text.Document;
-import org.openpdf.text.DocumentException;
-import org.openpdf.text.Font;
-import org.openpdf.text.Paragraph;
-import org.openpdf.text.pdf.BaseFont;
-import org.openpdf.text.pdf.PdfDictionary;
-import org.openpdf.text.pdf.PdfName;
-import org.openpdf.text.pdf.PdfPCell;
-import org.openpdf.text.pdf.PdfPTable;
-import org.openpdf.text.pdf.PdfReader;
-import org.openpdf.text.pdf.PdfString;
-import org.openpdf.text.pdf.PdfWriter;
-import org.openpdf.text.pdf.parser.PdfTextExtractor;
-import org.openpdf.text.xml.xmp.XmpWriter;
 
 @Path("/openpdf")
 @ApplicationScoped

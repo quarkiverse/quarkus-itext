@@ -7,6 +7,8 @@ import org.openpdf.renderer.colorspace.PDFColorSpace;
 import org.openpdf.renderer.font.ttf.AdobeGlyphList;
 import org.openpdf.text.pdf.PdfPublicKeySecurityHandler;
 
+
+
 public class OpenPDFFeature implements Feature {
 
     private final static String REASON = "OpenPDF runtime initialization";

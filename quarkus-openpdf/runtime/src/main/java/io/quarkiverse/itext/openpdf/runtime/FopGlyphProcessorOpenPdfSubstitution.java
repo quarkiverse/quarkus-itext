@@ -3,9 +3,11 @@ package io.quarkiverse.itext.openpdf.runtime;
 import com.oracle.svm.core.annotate.Substitute;
 import com.oracle.svm.core.annotate.TargetClass;
 import org.openpdf.text.pdf.BaseFont;
-
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
+
+
+
 
 /**
  * FOP is used for one minor feature of OpenPDF, and we don't want to bring in the FOP bloat for
