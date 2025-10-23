@@ -39,7 +39,6 @@ import jakarta.ws.rs.Path;
 import org.openpdf.pdf.ITextRenderer;
 import org.openpdf.renderer.PDFFile;
 import org.openpdf.renderer.PDFPage;
-
 import org.openpdf.text.Document;
 import org.openpdf.text.DocumentException;
 import org.openpdf.text.Font;
