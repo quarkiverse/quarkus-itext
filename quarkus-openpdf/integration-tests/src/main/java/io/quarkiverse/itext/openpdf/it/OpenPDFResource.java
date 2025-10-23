@@ -111,7 +111,7 @@ public class OpenPDFResource {
         try {
             // step 2: create writer and set conformance
             PdfWriter writer = PdfWriter.getInstance(document, new ByteArrayOutputStream());
-            writer.setPDFXConformance(com.lowagie.text.pdf.PdfWriter.PDFA1B);
+            writer.setPDFXConformance(org.openpdf.text.pdf.PdfWriter.PDFA1B);
 
             // step 3: open the document
             document.open();

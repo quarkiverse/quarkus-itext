@@ -87,12 +87,12 @@ class OpenPDFProcessor {
 
         // core PDF classes
         final List<String> classNames = new ArrayList<>(
-                collectSubclasses(combinedIndex, com.lowagie.text.Image.class.getName()));
-        classNames.add(com.lowagie.bouncycastle.BouncyCastleHelper.class.getName());
-        classNames.add(com.lowagie.text.PageSize.class.getName());
-        classNames.add(com.lowagie.text.Utilities.class.getName());
-        classNames.add(com.lowagie.text.pdf.PdfName.class.getName());
-        classNames.add(com.lowagie.text.pdf.internal.PdfVersionImp.class.getName());
+                collectSubclasses(combinedIndex, org.openpdf.text.Image.class.getName()));
+        classNames.add(org.openpdf.bouncycastle.BouncyCastleHelper.class.getName());
+        classNames.add(org.openpdf.text.PageSize.class.getName());
+        classNames.add(org.openpdf.text.Utilities.class.getName());
+        classNames.add(org.openpdf.text.pdf.PdfName.class.getName());
+        classNames.add(org.openpdf.text.pdf.internal.PdfVersionImp.class.getName());
 
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields
