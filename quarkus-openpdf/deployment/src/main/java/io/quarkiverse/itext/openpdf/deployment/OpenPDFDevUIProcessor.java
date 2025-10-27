@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.jar.Manifest;
 
-import com.lowagie.text.pdf.interfaces.PdfVersion;
+import org.openpdf.text.pdf.interfaces.PdfVersion;
 
 import io.quarkus.deployment.IsDevelopment;
 import io.quarkus.deployment.annotations.BuildProducer;
