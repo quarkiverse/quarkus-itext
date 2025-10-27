@@ -27,6 +27,17 @@ A Quarkus extension that lets you utilize [OpenPDF](https://github.com/LibrePDF/
 > [!IMPORTANT]
 > Consider using OpenPDF first, as it is modern and supports encrypted PDFs. Only resort to the legacy iText version if OpenPDF doesn't meet your needs.
 
+## Versioning
+
+There are multiple versions available please check which one for your Quarkus release version.
+
+| Extension Version | OpenPDF version | Quarkus Version |
+| --- | --- | --- |
+| ![3.3.x](https://img.shields.io/maven-central/v/io.quarkiverse.itext/quarkus-itext?versionPrefix=3.3&color=cyan) | [![OpenPDF](https://img.shields.io/maven-central/v/com.github.librepdf/openpdf?versionPrefix=2.2&color=green)](https://github.com/LibrePDF/OpenPDF/releases/tag/2.2.4) | [![Quarkus](https://img.shields.io/badge/Quarkus-3.15+-purple.svg)](https://github.com/quarkusio/quarkus/releases/tag/3.15.0) |
+| ![4.0.x](https://img.shields.io/maven-central/v/io.quarkiverse.itext/quarkus-itext?versionPrefix=4.0&color=cyan) | [![OpenPDF](https://img.shields.io/maven-central/v/com.github.librepdf/openpdf?versionPrefix=3.0&color=green)](https://github.com/LibrePDF/OpenPDF/releases/tag/3.0.0) | [![Quarkus](https://img.shields.io/badge/Quarkus-3.27+-purple.svg)](https://github.com/quarkusio/quarkus/releases/tag/3.27.0) |
+| ![latest](https://img.shields.io/maven-central/v/io.quarkiverse.itext/quarkus-itext?&color=cyan) | [![OpenPDF](https://img.shields.io/maven-central/v/com.github.librepdf/openpdf?versionPrefix=3.0&color=green)](https://github.com/LibrePDF/OpenPDF/releases/tag/3.0.0) | [![Quarkus](https://img.shields.io/badge/Quarkus-3.27+-purple.svg)](https://github.com/quarkusio/quarkus/releases/tag/3.27.0) |
+
+
 ## Getting started
 
 Read the full [iText/OpenPDF documentation](https://docs.quarkiverse.io/quarkus-itext/dev/index.html).
