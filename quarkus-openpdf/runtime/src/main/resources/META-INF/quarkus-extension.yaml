@@ -10,6 +10,7 @@ metadata:
     - writer
   guide: "https://quarkiverse.github.io/quarkiverse-docs/quarkus-itext/dev/"
   icon-url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png"
+  lib-ga: com.github.librepdf:openpdf[https://github.com/LibrePDF/OpenPDF]
   categories:
     - "miscellaneous"
   status: "stable"
