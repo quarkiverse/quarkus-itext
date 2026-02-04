@@ -259,6 +259,39 @@ public class OpenPDFResource {
         return "PDF created: flying-saucer-hello.pdf";
     }
 
+    @GET
+    @Path("/renderer-html-truetype-font")
+    public String htmlRendererTrueType() throws IOException {
+        String html = """
+                <html>
+                  <head>
+                    <style>
+                      body { font-family: "NotoSans"; }
+                      h1 { color: navy; }
+                    </style>
+                  </head>
+                  <body>
+                    <h1>Hello, World!</h1>
+                    <p>This PDF was generated using openpdf-html.</p>
+                  </body>
+                </html>
+                """;
+
+        File outputDir = new File("target/test-output");
+        outputDir.mkdirs();
+        File outputImageFile = new File(outputDir, "openpdf-html-hello-truetype-font.pdf");
+
+        try (FileOutputStream outputStream = new FileOutputStream(outputImageFile)) {
+            ITextRenderer renderer = new ITextRenderer();
+            renderer.getFontResolver().addFont("/fonts/noto/NotoSans-Regular.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+            renderer.setDocumentFromString(html);
+            renderer.layout();
+            renderer.createPDF(outputStream);
+        }
+
+        return "PDF created: flying-saucer-hello-truetype-font.pdf";
+    }
+
     protected void addEmptyLine(Paragraph paragraph, int number) {
         for (int i = 0; i < number; i++) {
             paragraph.add(new Paragraph(" "));

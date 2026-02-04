@@ -57,4 +57,14 @@ public class OpenPDFResourceTest {
                 .body(is(
                         "PDF created: flying-saucer-hello.pdf"));
     }
+
+    @Test
+    public void testHtmlRendererTrueType() {
+        given()
+                .when().get("/openpdf/renderer-html-truetype-font")
+                .then()
+                .statusCode(200)
+                .body(is(
+                        "PDF created: flying-saucer-hello-truetype-font.pdf"));
+    }
 }
