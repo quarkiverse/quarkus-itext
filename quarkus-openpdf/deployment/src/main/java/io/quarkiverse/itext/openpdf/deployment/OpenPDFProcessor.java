@@ -93,8 +93,8 @@ class OpenPDFProcessor {
         classNames.add(org.openpdf.text.Utilities.class.getName());
         classNames.add(org.openpdf.text.pdf.PdfName.class.getName());
         classNames.add(org.openpdf.text.pdf.internal.PdfVersionImp.class.getName());
-        classNames.add(org.openpdf.text.pdf.TrueTypeFont.class.getName());
-        classNames.add(org.openpdf.text.pdf.TrueTypeFontUnicode.class.getName());
+        classNames.add("org.openpdf.text.pdf.TrueTypeFont");
+        classNames.add("org.openpdf.text.pdf.TrueTypeFontUnicode");
 
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields
