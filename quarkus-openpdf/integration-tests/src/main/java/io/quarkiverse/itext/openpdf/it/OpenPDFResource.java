@@ -261,7 +261,7 @@ public class OpenPDFResource {
 
     @GET
     @Path("/renderer-html-truetype-font")
-    public String htmlRenderer() throws IOException {
+    public String htmlRendererTrueType() throws IOException {
         String html = """
                 <html>
                   <head>
