@@ -93,6 +93,8 @@ class OpenPDFProcessor {
         classNames.add(com.lowagie.text.Utilities.class.getName());
         classNames.add(com.lowagie.text.pdf.PdfName.class.getName());
         classNames.add(com.lowagie.text.pdf.internal.PdfVersionImp.class.getName());
+        classNames.add("com.lowagie.text.pdf.TrueTypeFont");
+        classNames.add("com.lowagie.text.pdf.TrueTypeFontUnicode");
 
         Log.debugf("OpenPDF Reflection: %s", classNames);
         // methods and fields
