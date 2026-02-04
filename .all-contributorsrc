@@ -60,6 +60,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Harriebo",
+      "name": "Harriebo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3034350?v=4",
+      "profile": "http://vjharriebo.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
