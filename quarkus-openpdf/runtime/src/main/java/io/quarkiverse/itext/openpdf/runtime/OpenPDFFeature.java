@@ -5,7 +5,9 @@ import org.graalvm.nativeimage.hosted.RuntimeClassInitialization;
 import org.openpdf.pdf.ITextOutputDevice;
 import org.openpdf.renderer.colorspace.PDFColorSpace;
 import org.openpdf.renderer.font.ttf.AdobeGlyphList;
+import org.openpdf.text.pdf.PdfEncryption;
 import org.openpdf.text.pdf.PdfPublicKeySecurityHandler;
+
 
 public class OpenPDFFeature implements Feature {
 
@@ -14,6 +16,7 @@ public class OpenPDFFeature implements Feature {
     @Override
     public void afterRegistration(AfterRegistrationAccess access) {
         // itext core
+        RuntimeClassInitialization.initializeAtRunTime(PdfEncryption.class.getName());
         RuntimeClassInitialization.initializeAtRunTime(PdfPublicKeySecurityHandler.class.getName());
 
         // image renderer
