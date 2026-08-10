@@ -2,7 +2,7 @@
   <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
     <img src="https://raw.githubusercontent.com/quarkiverse/.github/main/assets/images/quarkus.svg" alt="Quarkus logo" style="height: 70px; width: auto;">
     <img src="https://raw.githubusercontent.com/quarkiverse/.github/main/assets/images/plus-sign.svg" alt="Plus sign" style="height: 70px; width: auto;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png" alt="iText/OpenPDF logo" style="height: 70px; width: auto;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="iText/OpenPDF logo" style="height: 70px; width: auto;">
   </div>
 
   <h1>Quarkus iText/OpenPDF</h1>
