@@ -48,10 +48,12 @@ class OpenPDFProcessor {
     }
 
     @BuildStep
-    void registerOpenPdfFonts(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
+    void registerOpenPdfResources(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
         final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
         builder.includeGlob("org/openpdf/text/pdf/fonts/**");
         builder.includeGlob("font-fallback/**");
+        // error message translations, loaded as plain resources by MessageLocalization
+        builder.includeGlob("org/openpdf/text/error_messages/*.lng");
         nativeImageResourcePatterns.produce(builder.build());
     }
 
@@ -69,14 +71,6 @@ class OpenPDFProcessor {
     void registerHtmlRenderer(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
         final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
         builder.includeGlob("resources/**");
-        nativeImageResourcePatterns.produce(builder.build());
-    }
-
-    @BuildStep
-    void registerOpenPdfResources(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
-        // error message translations, loaded as plain resources by MessageLocalization
-        final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
-        builder.includeGlob("org/openpdf/text/error_messages/*.lng");
         nativeImageResourcePatterns.produce(builder.build());
     }
 
