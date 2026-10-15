@@ -16,7 +16,6 @@ import io.quarkus.deployment.builditem.FeatureBuildItem;
 import io.quarkus.deployment.builditem.IndexDependencyBuildItem;
 import io.quarkus.deployment.builditem.NativeImageEnableAllCharsetsBuildItem;
 import io.quarkus.deployment.builditem.NativeImageFeatureBuildItem;
-import io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBundleBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.NativeImageResourcePatternsBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
 import io.quarkus.deployment.pkg.builditem.UberJarMergedResourceBuildItem;
@@ -74,11 +73,11 @@ class OpenPDFProcessor {
     }
 
     @BuildStep
-    void registerOpenPdfResources(BuildProducer<NativeImageResourceBundleBuildItem> resourceBundleBuildItem) {
-        // Register resource bundles
-        resourceBundleBuildItem.produce(new NativeImageResourceBundleBuildItem("com/lowagie/text/error_messages/en.lng"));
-        resourceBundleBuildItem.produce(new NativeImageResourceBundleBuildItem("com/lowagie/text/error_messages/nl.lng"));
-        resourceBundleBuildItem.produce(new NativeImageResourceBundleBuildItem("com/lowagie/text/error_messages/pt.lng"));
+    void registerOpenPdfResources(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
+        // error message translations, loaded as plain resources by MessageLocalization
+        final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
+        builder.includeGlob("org/openpdf/text/error_messages/*.lng");
+        nativeImageResourcePatterns.produce(builder.build());
     }
 
     @BuildStep
