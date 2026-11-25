@@ -7,6 +7,7 @@ import org.openpdf.renderer.colorspace.PDFColorSpace;
 import org.openpdf.renderer.font.ttf.AdobeGlyphList;
 import org.openpdf.text.pdf.PdfEncryption;
 import org.openpdf.text.pdf.PdfPublicKeySecurityHandler;
+import org.openpdf.text.pdf.crypto.IVGenerator;
 
 public class OpenPDFFeature implements Feature {
 
@@ -17,6 +18,7 @@ public class OpenPDFFeature implements Feature {
         // itext core
         RuntimeClassInitialization.initializeAtRunTime(PdfEncryption.class.getName());
         RuntimeClassInitialization.initializeAtRunTime(PdfPublicKeySecurityHandler.class.getName());
+        RuntimeClassInitialization.initializeAtRunTime(IVGenerator.class.getName());
 
         // image renderer
         RuntimeClassInitialization.initializeAtRunTime(AdobeGlyphList.class.getName());
