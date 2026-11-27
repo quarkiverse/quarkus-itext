@@ -13,11 +13,8 @@ import com.lowagie.text.Utilities;
 import com.lowagie.text.pdf.PdfName;
 
 import io.quarkiverse.itext.runtime.ItextFeature;
-import io.quarkiverse.itext.runtime.ItextRecorder;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
-import io.quarkus.deployment.annotations.ExecutionTime;
-import io.quarkus.deployment.annotations.Record;
 import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
 import io.quarkus.deployment.builditem.IndexDependencyBuildItem;
@@ -59,8 +56,7 @@ class ItextProcessor {
     }
 
     @BuildStep
-    @Record(ExecutionTime.STATIC_INIT)
-    void registerForReflection(ItextRecorder recorder,
+    void registerForReflection(
             BuildProducer<ReflectiveClassBuildItem> reflectiveClass,
             CombinedIndexBuildItem combinedIndex) {
         final List<String> classNames = new ArrayList<>();
