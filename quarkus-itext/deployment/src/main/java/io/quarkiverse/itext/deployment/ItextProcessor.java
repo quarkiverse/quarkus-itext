@@ -54,7 +54,7 @@ class ItextProcessor {
     @BuildStep
     void registerFonts(BuildProducer<NativeImageResourcePatternsBuildItem> nativeImageResourcePatterns) {
         final NativeImageResourcePatternsBuildItem.Builder builder = NativeImageResourcePatternsBuildItem.builder();
-        builder.includeGlob("**/pdf/fonts/**");
+        builder.includeGlob("com/lowagie/text/pdf/fonts/**");
         nativeImageResourcePatterns.produce(builder.build());
     }
 
